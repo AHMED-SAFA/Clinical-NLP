@@ -1,0 +1,15 @@
+pymupdf
+pdfplumber
+pydantic>=2
+sentence-transformers
+chromadb
+rank-bm25
+streamlit
+pandas
+pyyaml
+python-dotenv
+tenacity
+pytest
+# LLM provider (keep the one you use)
+google-genai
+requests
