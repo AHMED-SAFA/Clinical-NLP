@@ -33,15 +33,22 @@ Rules:
 - age_years is always in YEARS: convert months (6 months = 0.5, 12 months = 1, 24 months = 2). weight_kg is in kg. For a range use two conditions (>= and <).
 - Copy evidence passages exactly as printed. Never change numbers, units or wording, and never append words.
 - Do not add prerequisites the page does not state.
+- A medication card ALWAYS has a medication object. IV fluids, ORS, zinc and dextrose count as medications (fill name, dose, route, frequency, duration, instructions from the page). Weight/age-dependent doses go in variants, each with its own medication.
 """
 
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--pages", help="comma list, e.g. 7,65")
+    ap.add_argument(
+        "--start", type=int, default=0, help="ID counter start; use 100 for patch runs"
+    )
+    ap.add_argument("--out", default=str(DRAFTS_PATH))
     ap.add_argument("--only", choices=list(PROTOCOLS))
     ap.add_argument("--group", type=int, default=3, help="pages per LLM call")
     a = ap.parse_args()
-    counters, cards, bad = defaultdict(int), [], 0
+    counters, cards, bad = defaultdict(lambda: a.start), [], 0
+
     for key, meta in PROTOCOLS.items():
         if a.only and key != a.only:
             continue
@@ -49,6 +56,8 @@ def main():
         nums = sorted(map(int, ex["pages"]))
         for i in range(0, len(nums), a.group):
             chunk = nums[i : i + a.group]
+            if a.pages and not set(chunk) <= set(map(int, a.pages.split(","))):
+                continue
             txt = "\n\n".join(
                 f"=== PDF PAGE {p} ===\n{ex['pages'][str(p)]['text']}\n"
                 + "\n".join(ex["pages"][str(p)]["tables_md"])
@@ -86,7 +95,11 @@ def main():
     DRAFTS_PATH.write_text(
         "\n".join(c.model_dump_json() for c in cards) + "\n", "utf-8"
     )
-    print(f"{len(cards)} draft cards -> {DRAFTS_PATH} ({bad} skipped)")
+    Path(a.out).write_text(
+        "\n".join(c.model_dump_json() for c in cards) + "\n", "utf-8"
+    )
+    print(f"{len(cards)} draft cards -> {a.out} ({bad} skipped)")
+    # print(f"{len(cards)} draft cards -> {DRAFTS_PATH} ({bad} skipped)")
 
 
 if __name__ == "__main__":

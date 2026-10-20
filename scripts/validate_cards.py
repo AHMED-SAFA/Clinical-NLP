@@ -34,11 +34,18 @@ for c in cards:
             0, len(p), 0, len(hay)
         )
         r = m.size / max(len(p), 1)
-        if r < 0.8:
-            print(f"{c.card_id} p.{e.page}: evidence NOT found (match {r:.0%})")
-            errs += 1
-        else:
+        if r >= 0.8:
             print(f"{c.card_id} p.{e.page}: fuzzy match {r:.0%} - check manually")
+        else:
+            toks = re.findall(r"\w+", p)
+            pt = set(re.findall(r"\w+", hay))
+            cov = sum(t in pt for t in toks) / max(len(toks), 1)
+            bad_nums = [t for t in toks if t.isdigit() and t not in pt]
+            if cov >= 0.9 and not bad_nums:
+                print(f"{c.card_id} p.{e.page}: reordered/table text (tokens {cov:.0%}) - check vs PNG")
+            else:
+                print(f"{c.card_id} p.{e.page}: NOT FOUND (match {r:.0%}, tokens {cov:.0%}, numbers missing {bad_nums})")
+                errs += 1
     rows.append((c.disease, c.category, c.reviewed))
 df = pd.DataFrame(rows, columns=["disease", "category", "reviewed"])
 print("\nCoverage:\n", pd.crosstab(df.disease, df.category))

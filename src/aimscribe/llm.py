@@ -46,15 +46,17 @@ def _groq(system, user, schema):
     )
     if C.GROQ_MODEL.startswith("openai/gpt-oss"):
         body["reasoning_effort"] = "low"
-    r = requests.post(
-        "https://api.groq.com/openai/v1/chat/completions",
-        headers={"Authorization": f"Bearer {C.GROQ_API_KEY}"},
-        json=body,
-        timeout=120,
-    )
+    for attempt in range(2):
+        r = requests.post("https://api.groq.com/openai/v1/chat/completions",
+                          headers={"Authorization": f"Bearer {C.GROQ_API_KEY}"}, json=body, timeout=120)
+        if r.status_code == 400 and "json_validate_failed" in r.text and attempt == 0:
+            body.pop("seed", None)
+            body["temperature"] = 0.3
+            continue
+        break
     if r.status_code in (400, 401, 403, 404, 413):
         raise FatalLLMError(f"Groq {r.status_code}: {r.text[:300]}")
-    r.raise_for_status()  # 429/5xx are retried
+    r.raise_for_status()
     return _parse(r.json()["choices"][0]["message"]["content"])
 
 
