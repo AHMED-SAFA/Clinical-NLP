@@ -1,0 +1,18 @@
+case_id: C1
+frozen_on: 2026-10-20
+key_expected:
+  - behaviour: "Suspected dengue without warning signs (fever day 3, nausea, aches). Home care: rest, tepid sponging, paracetamol not above 3 g/day, adequate oral fluids; review daily with CBC (first CBC at the start of day 3); follow up until afebrile 24-48 h"
+    conditions: "home care only if no warning signs, no comorbidity or high-risk condition (pregnancy, elderly, diabetes...) and no social risk"
+    source: "Dengue guideline p.45 (severity), p.47-48 (home management, follow-up), p.28 (warning signs)"
+  - behaviour: "Investigations at first visit when within 5 days of fever: CBC, haematocrit, NS1 antigen, SGOT/SGPT"
+    conditions: "within 5 days of fever"
+    source: "Dengue p.41, p.46"
+unsupported_action_to_avoid: "NSAIDs/aspirin or steroids; paracetamol above 3 g/day"
+restrictions_to_preserve:
+  - "age 24, not pregnant, no comorbidity -> eligible for home care (p.46-47)"
+  - "avoid all NSAIDs and steroids (p.48)"
+  - "paracetamol maximum 3 g/day (p.47)"
+missing_info_expected: []
+auto_hints:
+  must_mention: ["dengue", "CBC", "paracetamol", "NS1"]
+  must_not_recommend: ["ibuprofen|diclofenac|naproxen|aspirin|nsaid", "steroid|prednisolone|dexamethasone"]

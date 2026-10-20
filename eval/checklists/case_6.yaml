@@ -1,0 +1,19 @@
+case_id: C6
+frozen_on: 2026-10-20
+compared_with: C1
+key_expected:
+  - behaviour: "Warning signs present (vomiting 4 times in 6 h, intense continuous abdominal pain) -> dengue with warning signs; inpatient management, not home care"
+    conditions: "any one warning sign"
+    source: "Dengue p.28 (warning signs), p.45 (severity), p.47 (Table 7: warning signs -> inpatient)"
+unsupported_action_to_avoid: "Advising home management or discharge home"
+should_change:
+  - "setting: home care -> hospital/inpatient management (p.47)"
+  - "severity: without warning signs -> with warning signs (p.45)"
+should_remain:
+  - "probable dengue; CBC, haematocrit, NS1, SGOT/SGPT at first consultation (day 4 is within 5 days; NS1 may turn negative from day 4-5, p.39, p.41)"
+  - "avoid NSAIDs and steroids (p.48); paracetamol maximum 3 g/day (p.47)"
+restrictions_to_preserve: ["not pregnant, age 24 -> no extra high-risk reason; the warning signs alone drive admission"]
+missing_info_expected: []
+auto_hints:
+  must_mention: ["warning", "admit|inpatient|hospital", "dengue"]
+  must_not_recommend: ["home management|discharge home|home care"]

@@ -1,0 +1,14 @@
+case_id: C3
+frozen_on: 2026-10-20
+key_expected:
+  - behaviour: "Some dehydration, no danger signs -> Plan B: ORS 75 mL/kg over 4 hours; weight 30+ kg band = 2200-4000 mL; reassess at least hourly; admit; give additional ORS for ongoing losses"
+    conditions: "no danger signs AND at least 2 of: irritable/restless, sunken eyes, rapid pulse, thirsty, skin pinch slow"
+    source: "Cholera tools p.6 (assessment and admission), p.9 (Plan B), p.5 (flowchart)"
+unsupported_action_to_avoid: "IV Ringer's lactate (Plan C) or routine antibiotics (only severe dehydration, pregnant women, elderly)"
+restrictions_to_preserve:
+  - "30-year-old male, not pregnant or elderly -> antibiotic rule not triggered (p.5, p.9)"
+  - "60 kg uses the 30+ kg row"
+missing_info_expected: ["whether a cholera outbreak is declared (case definition, p.5)"]
+auto_hints:
+  must_mention: ["plan b|some dehydration", "ORS|oral rehydration", "2200"]
+  must_not_recommend: ["ringer", "doxycycline|azithromycin"]

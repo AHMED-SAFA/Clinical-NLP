@@ -89,7 +89,11 @@ with st.sidebar:
         "Findings / results available (vitals, labs)", key="findings", height=60
     )
     st.divider()
-    mode = st.radio("Mode", ["baseline"], help="'improved' is added later")
+    mode = st.radio(
+        "Mode",
+        ["baseline", "improved"],
+        help="improved = baseline + deterministic applicability check",
+    )
     top_k = st.slider("Cards retrieved (top-k)", 4, 25, 12)
     go = st.button("Get recommendations", type="primary", use_container_width=True)
 
@@ -156,6 +160,24 @@ for h in res["retrieved"]:
         )
         for e in h["evidence"]:
             st.markdown(f"> {e['passage']}  \n> *(p.{e['page']})*")
+if res.get("applicability"):
+    st.subheader("2b. Applicability check (improved mode)")
+    st.table(
+        [
+            {
+                "card": cid,
+                "status": a["status"],
+                "missing": "; ".join(a["missing"]) or "-",
+                "unconfirmed": "; ".join(a["unconfirmed"]) or "-",
+                "reasons": "; ".join(a["reasons"]) or "-",
+            }
+            for cid, a in res["applicability"].items()
+        ]
+    )
+if res.get("blocked_citations"):
+    st.warning(
+        f"Cited as support although the checker blocked them: {res['blocked_citations']}"
+    )
 
 st.subheader("3. Recommendations")
 t1, t2, t3, t4, t5 = st.tabs(

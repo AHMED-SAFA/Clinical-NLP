@@ -1,0 +1,388 @@
+{
+  "timestamp": "2026-10-20T16:44:37",
+  "mode": "baseline",
+  "model": "groq:openai/gpt-oss-120b",
+  "patient": {
+    "complaints": "high fever, headache, pain behind the eyes, body aches, nausea",
+    "duration_days": 4.0,
+    "age_years": 24.0,
+    "sex": "female",
+    "pregnant": false,
+    "weight_kg": 55.0,
+    "history": "none",
+    "medicines": "paracetamol 500 mg as needed",
+    "allergies": "none known",
+    "findings": "persistent vomiting, severe abdominal pain, drinking poorly, no bleeding"
+  },
+  "patient_query": "high fever, headache, pain behind the eyes, body aches, nausea. for 4 days. 24 year old. female. persistent vomiting, severe abdominal pain, drinking poorly, no bleeding. none. paracetamol 500 mg as needed",
+  "retrieved": [
+    {
+      "card_id": "DEN-ADV-001",
+      "disease": "dengue",
+      "category": "advice",
+      "title": "Warning signs indicating severe dengue",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          28
+        ]
+      },
+      "action": "Promptly refer for higher level care and initiate close monitoring for shock",
+      "evidence": [
+        {
+          "page": 28,
+          "passage": "Warning signs of dengue fever: • Intense continuous abdominal pain or pain when palpating abdomen • Persistent vomiting (≥3 episodes in 1 hr or ≥4 in 6 hrs) • Fluid accumulation (pleural effusion, ascites, or pericardial effusion) • Mucosal bleeding (gums, nose, vagina [metrorrhagia or hypermenorrhea], kidney [macroscopic hematuria]) • Altered mental status (irritability, drowsiness, Glasgow Coma Scale score <15) • Hepatomegaly (≥2cm below costal margin) • Progressive increase of the haematocrit (in at least 2 consecutive measurements taken 6 hours apart)"
+        }
+      ],
+      "rrf": 0.032,
+      "dense_rank": 3,
+      "bm25_rank": 2
+    },
+    {
+      "card_id": "DEN-ADV-011",
+      "disease": "dengue",
+      "category": "advice",
+      "title": "Warning signs for immediate return or hospitalization",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          48
+        ]
+      },
+      "action": "Advise patients to return to the hospital immediately if any of the listed warning signs develop.",
+      "evidence": [
+        {
+          "page": 48,
+          "passage": "Advise patients to return to the hospital immediately, if they develop any of the following conditions: Clinical deterioration with settling of fever; Inability to tolerate oral fluids; Severe abdominal pain; Lethargy or irritability / restlessness"
+        },
+        {
+          "page": 48,
+          "passage": "Bleeding tendency like abnormal vaginal bleeding, blood vomiting, black tarry stool, bleeding from nose and gum."
+        },
+        {
+          "page": 48,
+          "passage": "Reduced urine output for the last 4-6 hours (<150-200 ml/ 4-6 hours if weight is 50kg or more)"
+        },
+        {
+          "page": 48,
+          "passage": "Cold and clammy extremities"
+        },
+        {
+          "page": 48,
+          "passage": "Difficulty in breathing."
+        }
+      ],
+      "rrf": 0.03101,
+      "dense_rank": 4,
+      "bm25_rank": 5
+    },
+    {
+      "card_id": "CHI-RX-002",
+      "disease": "chikungunya",
+      "category": "medication",
+      "title": "Paracetamol for fever",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          19
+        ]
+      },
+      "action": "Give paracetamol tablets up to 1000 mg four times daily",
+      "evidence": [
+        {
+          "page": 19,
+          "passage": "Take paracetamol tablets during periods of fever (up to 1000 mg tablets four times daily), in persons with no preexisting liver or kidney disease."
+        }
+      ],
+      "rrf": 0.03083,
+      "dense_rank": 2,
+      "bm25_rank": 8
+    },
+    {
+      "card_id": "DEN-DX-002",
+      "disease": "dengue",
+      "category": "probable_diagnosis",
+      "title": "Classical Dengue Fever (DF)",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          27
+        ]
+      },
+      "action": "Consider diagnosis of classical dengue fever and monitor for complications such as hemorrhage",
+      "evidence": [
+        {
+          "page": 27,
+          "passage": "A proportion of patients infected with dengue virus develop classical dengue fever characterized by high fever, severe headache, retro-orbital pain, myalgia, arthralgia and rashes. Leucopenia and thrombocytopenia are usually observed."
+        },
+        {
+          "page": 27,
+          "passage": "The body temperature is usually between 39 °C and 40 °C (102° F to 104° F)."
+        }
+      ],
+      "rrf": 0.03058,
+      "dense_rank": 8,
+      "bm25_rank": 3
+    },
+    {
+      "card_id": "CHI-RX-001",
+      "disease": "chikungunya",
+      "category": "medication",
+      "title": "Paracetamol for fever in suspected chikungunya",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          18
+        ]
+      },
+      "action": "Take paracetamol tablets during periods of fever",
+      "evidence": [
+        {
+          "page": 18,
+          "passage": "Take paracetamol tablets during periods of fever (up to 1000 mg tablets four times daily), in persons with no preexisting liver or kidney disease. Children may be given 50-60 mg per kg body weight per day in divided doses."
+        }
+      ],
+      "rrf": 0.03054,
+      "dense_rank": 5,
+      "bm25_rank": 6
+    },
+    {
+      "card_id": "DEN-RX-001",
+      "disease": "dengue",
+      "category": "medication",
+      "title": "Paracetamol dosing limit in dengue",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          47
+        ]
+      },
+      "action": "Do not exceed 3 g/day of paracetamol (60 mg/kg/24 h in child)",
+      "evidence": [
+        {
+          "page": 47,
+          "passage": "Do not exceed 3 gm/day of paracetamol. (60mg/kg/24hrs in child)"
+        }
+      ],
+      "rrf": 0.02991,
+      "dense_rank": 1,
+      "bm25_rank": 14
+    },
+    {
+      "card_id": "DEN-DX-005",
+      "disease": "dengue",
+      "category": "probable_diagnosis",
+      "title": "Dengue Without Warning Signs Criteria",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          45
+        ]
+      },
+      "action": "Classify as dengue without warning signs",
+      "evidence": [
+        {
+          "page": 45,
+          "passage": "Dengue without warning signs: Fever (2-7 days) with two or more of the followings; nausea, vomiting, rash, aches and pains, positive tourniquet tests, or leucopenia (WBC <5000/mm3)"
+        }
+      ],
+      "rrf": 0.02971,
+      "dense_rank": 11,
+      "bm25_rank": 4
+    },
+    {
+      "card_id": "CHI-RX-003",
+      "disease": "chikungunya",
+      "category": "medication",
+      "title": "Paracetamol dosing for children",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          19
+        ]
+      },
+      "action": "Give 50‑60 mg per kg body weight per day in divided doses",
+      "evidence": [
+        {
+          "page": 19,
+          "passage": "Children may be given 50-60 mg per kg body weight per day in divided doses."
+        }
+      ],
+      "rrf": 0.02964,
+      "dense_rank": 6,
+      "bm25_rank": 9
+    },
+    {
+      "card_id": "CHO-DX-003",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "Severe dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          6
+        ]
+      },
+      "action": "Admit to facility and follow Plan CC",
+      "evidence": [
+        {
+          "page": 6,
+          "passage": "Severe  One or more danger signs: • Lethargic or unconscious • Absent or weak pulse • Respiratory distress OR at least 2 of the following: • Sunken eyes • Not able to drink or drinks poorly • Skin pinch goes back very slowly"
+        }
+      ],
+      "rrf": 0.02705,
+      "dense_rank": 16,
+      "bm25_rank": 12
+    },
+    {
+      "card_id": "CHO-DX-004",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "Some dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          6
+        ]
+      },
+      "action": "Admit to facility and follow Plan B",
+      "evidence": [
+        {
+          "page": 6,
+          "passage": "Some  No danger signs AND at least 2 of the following: • Irritable or restless Sunken eyes • Rapid pulse • Thirsty (drinks eagerly) • Skin pinch goes back slowly"
+        }
+      ],
+      "rrf": 0.02629,
+      "dense_rank": 7,
+      "bm25_rank": 28
+    },
+    {
+      "card_id": "CHI-DX-005",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Chikungunya Fever - Moderate Presentation",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          14
+        ]
+      },
+      "action": "Classify as moderate chikungunya fever and consider closer monitoring and analgesia",
+      "evidence": [
+        {
+          "page": 14,
+          "passage": "Moderate\n Low to high grade persistent fever\n  Moderate arthralgia /arthritis\n  Generalized myalgia"
+        }
+      ],
+      "rrf": 0.02613,
+      "dense_rank": 23,
+      "bm25_rank": 11
+    },
+    {
+      "card_id": "CHO-ADV-004",
+      "disease": "cholera",
+      "category": "advice",
+      "title": "Oral Rehydration Solution (ORS) for patients with no sign of dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          11
+        ]
+      },
+      "action": "Provide ORS according to age‑specific volume",
+      "evidence": [
+        {
+          "page": 11,
+          "passage": "| < 24 months | 50 - 100 mL | 500 mL / day |"
+        },
+        {
+          "page": 11,
+          "passage": "| 2-9 years | 100 – 200 mL | 1L/day |"
+        },
+        {
+          "page": 11,
+          "passage": "| 10 years + | As much as wanted | 2 L / day |"
+        }
+      ],
+      "rrf": 0.0254,
+      "dense_rank": 30,
+      "bm25_rank": 10
+    }
+  ],
+  "applicability": null,
+  "prompt": "## PATIENT\nChief complaints: high fever, headache, pain behind the eyes, body aches, nausea\nIllness duration (days): 4.0\nAge (years): 24.0\nSex: female\nPregnant: False\nWeight (kg): 55.0\nMedical history: none\nCurrent medicines: paracetamol 500 mg as needed\nAllergies: none known\nFindings/results available: persistent vomiting, severe abdominal pain, drinking poorly, no bleeding\n\n## PROTOCOL CARDS\n[DEN-ADV-001] disease=dengue category=advice | Warning signs indicating severe dengue\nPrerequisites: intense continuous abdominal pain; persistent vomiting; fluid accumulation; mucosal bleeding; altered mental status; hepatomegaly; rising haematocrit\nApplies if ANY: symptom has intense continuous abdominal pain; symptom has persistent vomiting (≥3 episodes in 1 hr or ≥4 in 6 hrs); finding has fluid accumulation (pleural effusion, ascites, or pericardial effusion); symptom has mucosal bleeding (gums, nose, vagina, kidney); symptom has altered mental status (irritability, drowsiness, GCS <15); finding has hepatomegaly (≥2cm below costal margin); finding has rising haematocrit (progressive increase in at least 2 consecutive measurements 6 hours apart)\nAction: Promptly refer for higher level care and initiate close monitoring for shock\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.28\nEvidence (p.28): \"Warning signs of dengue fever: • Intense continuous abdominal pain or pain when palpating abdomen • Persistent vomiting (≥3 episodes in 1 hr or ≥4 in 6 hrs) • Fluid accumulation (pleural effusion, ascites, or pericardial effusion) • Mucosal bleeding (gums, nose, vagina [metrorrhagia or hypermenorrhea], kidney [macroscopic hematuria]) • Altered mental status (irritability, drowsiness, Glasgow Coma Scale score <15) • Hepatomegaly (≥2cm below costal margin) • Progressive increase of the haematocrit (in at least 2 consecutive measurements taken 6 hours apart)\"\n\n[DEN-ADV-011] disease=dengue category=advice | Warning signs for immediate return or hospitalization\nPrerequisites: not stated\nApplies if ANY: symptom has clinical deterioration with settling of fever; symptom has inability to tolerate oral fluids; symptom has severe abdominal pain; symptom has lethargy or irritability / restlessness; symptom has bleeding tendency (abnormal vaginal bleeding, blood vomiting, black tarry stool, nose or gum bleeding); symptom has reduced urine output for last 4-6 hours (<150-200 ml/4-6 hours if weight ≥50 kg); symptom has cold and clammy extremities; symptom has difficulty breathing\nAction: Advise patients to return to the hospital immediately if any of the listed warning signs develop.\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.48\nEvidence (p.48): \"Advise patients to return to the hospital immediately, if they develop any of the following conditions: Clinical deterioration with settling of fever; Inability to tolerate oral fluids; Severe abdominal pain; Lethargy or irritability / restlessness\"\nEvidence (p.48): \"Bleeding tendency like abnormal vaginal bleeding, blood vomiting, black tarry stool, bleeding from nose and gum.\"\nEvidence (p.48): \"Reduced urine output for the last 4-6 hours (<150-200 ml/ 4-6 hours if weight is 50kg or more)\"\nEvidence (p.48): \"Cold and clammy extremities\"\nEvidence (p.48): \"Difficulty in breathing.\"\n\n[CHI-RX-002] disease=chikungunya category=medication | Paracetamol for fever\nPrerequisites: fever\nBLOCKED if ANY: medicine has preexisting liver disease; medicine has preexisting kidney disease\nAction: Give paracetamol tablets up to 1000 mg four times daily\nMedication: Paracetamol | dose: 1000 mg | route: oral | freq: four times daily | duration: not stated | instructions: Take during periods of fever | restrictions: Do not use in persons with preexisting liver or kidney disease\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.19\nEvidence (p.19): \"Take paracetamol tablets during periods of fever (up to 1000 mg tablets four times daily), in persons with no preexisting liver or kidney disease.\"\n\n[DEN-DX-002] disease=dengue category=probable_diagnosis | Classical Dengue Fever (DF)\nPrerequisites: high fever; severe headache; retro-orbital pain; myalgia; arthralgia; rash; leucopenia; thrombocytopenia\nApplies only if ALL: symptom has high fever; symptom has severe headache; symptom has retro-orbital pain; symptom has myalgia; symptom has arthralgia; symptom has rash\nAction: Consider diagnosis of classical dengue fever and monitor for complications such as hemorrhage\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.27\nEvidence (p.27): \"A proportion of patients infected with dengue virus develop classical dengue fever characterized by high fever, severe headache, retro-orbital pain, myalgia, arthralgia and rashes. Leucopenia and thrombocytopenia are usually observed.\"\nEvidence (p.27): \"The body temperature is usually between 39 °C and 40 °C (102° F to 104° F).\"\n\n[CHI-RX-001] disease=chikungunya category=medication | Paracetamol for fever in suspected chikungunya\nPrerequisites: fever\nApplies only if ALL: medicine not_has aspirin; medicine not_has NSAID\nBLOCKED if ANY: history has preexisting liver disease; history has preexisting kidney disease\nAction: Take paracetamol tablets during periods of fever\nMedication: Paracetamol | dose: 1000 mg per dose up to four times daily for adults; 50-60 mg/kg per day divided for children | route: oral | freq: up to four times daily as needed for fever | duration: not stated | instructions: Do not exceed recommended daily dose; avoid if liver or kidney disease present | restrictions: not stated\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.18\nEvidence (p.18): \"Take paracetamol tablets during periods of fever (up to 1000 mg tablets four times daily), in persons with no preexisting liver or kidney disease. Children may be given 50-60 mg per kg body weight per day in divided doses.\"\n\n[DEN-RX-001] disease=dengue category=medication | Paracetamol dosing limit in dengue\nPrerequisites: home management or any dengue patient\nAction: Do not exceed 3 g/day of paracetamol (60 mg/kg/24 h in child)\nMedication: Paracetamol | dose: ≤3 g/day (≤60 mg/kg/24 h in child) | route: oral | freq: as needed for fever | duration: not stated | instructions: Tepid sponging for fever; warn that fever may not fully settle with paracetamol and advise not to take excess | restrictions: max 3 g/day\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.47\nEvidence (p.47): \"Do not exceed 3 gm/day of paracetamol. (60mg/kg/24hrs in child)\"\n\n[DEN-DX-005] disease=dengue category=probable_diagnosis | Dengue Without Warning Signs Criteria\nPrerequisites: fever 2-7 days; two or more of: nausea, vomiting, rash, aches and pains, positive tourniquet test, leucopenia\nApplies only if ALL: duration_days >= 2.0; duration_days <= 7.0\nApplies if ANY: symptom has nausea; symptom has vomiting; symptom has rash; symptom has aches and pains; finding has positive tourniquet test; finding has leucopenia (WBC <5000/mm3)\nAction: Classify as dengue without warning signs\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.45\nEvidence (p.45): \"Dengue without warning signs: Fever (2-7 days) with two or more of the followings; nausea, vomiting, rash, aches and pains, positive tourniquet tests, or leucopenia (WBC <5000/mm3)\"\n\n[CHI-RX-003] disease=chikungunya category=medication | Paracetamol dosing for children\nPrerequisites: fever\nApplies only if ALL: age_years >= 0.0\nAction: Give 50‑60 mg per kg body weight per day in divided doses\nMedication: Paracetamol | dose: 50-60 mg/kg/day | route: oral | freq: divided doses | duration: not stated | instructions: not stated | restrictions: not stated\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.19\nEvidence (p.19): \"Children may be given 50-60 mg per kg body weight per day in divided doses.\"\n\n[CHO-DX-003] disease=cholera category=probable_diagnosis | Severe dehydration\nPrerequisites: lethargic or unconscious; absent or weak pulse; respiratory distress; sunken eyes; unable to drink or drinks poorly; skin pinch returns very slowly\nApplies only if ALL: symptom has lethargic or unconscious; symptom has absent or weak pulse; symptom has respiratory distress; symptom has sunken eyes; symptom has unable to drink or drinks poorly; symptom has skin pinch returns very slowly\nAction: Admit to facility and follow Plan CC\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.6\nEvidence (p.6): \"Severe  One or more danger signs: • Lethargic or unconscious • Absent or weak pulse • Respiratory distress OR at least 2 of the following: • Sunken eyes • Not able to drink or drinks poorly • Skin pinch goes back very slowly\"\n\n[CHO-DX-004] disease=cholera category=probable_diagnosis | Some dehydration\nPrerequisites: irritable or restless; sunken eyes; rapid pulse; thirsty (drinks eagerly); skin pinch goes back slowly\nApplies only if ALL: symptom has irritable or restless; symptom has sunken eyes; symptom has rapid pulse; symptom has thirsty (drinks eagerly); symptom has skin pinch goes back slowly\nAction: Admit to facility and follow Plan B\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.6\nEvidence (p.6): \"Some  No danger signs AND at least 2 of the following: • Irritable or restless Sunken eyes • Rapid pulse • Thirsty (drinks eagerly) • Skin pinch goes back slowly\"\n\n[CHI-DX-005] disease=chikungunya category=probable_diagnosis | Chikungunya Fever - Moderate Presentation\nPrerequisites: low to high grade persistent fever; moderate arthralgia or arthritis; generalized myalgia\nApplies only if ALL: symptom has persistent fever; symptom has moderate arthralgia\nAction: Classify as moderate chikungunya fever and consider closer monitoring and analgesia\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.14\nEvidence (p.14): \"Moderate\n Low to high grade persistent fever\n  Moderate arthralgia /arthritis\n  Generalized myalgia\"\n\n[CHO-ADV-004] disease=cholera category=advice | Oral Rehydration Solution (ORS) for patients with no sign of dehydration\nPrerequisites: cholera diagnosis; no sign of dehydration\nApplies only if ALL: age_years < 2.0 (<24 months); age_years >= 0.0\nAction: Provide ORS according to age‑specific volume\n  Variant WHEN age_years < 2.0: Give enough ORS packets for each loose stool, 50-100 mL per packet, total 500 mL per day\n  Variant WHEN age_years >= 2.0: Give enough ORS packets for each loose stool, 100-200 mL per packet, total 1 L per day\n  Variant WHEN age_years >= 10.0: Give enough ORS packets for each loose stool, as much as wanted, total 2 L per day\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.11\nEvidence (p.11): \"| < 24 months | 50 - 100 mL | 500 mL / day |\"\nEvidence (p.11): \"| 2-9 years | 100 – 200 mL | 1L/day |\"\nEvidence (p.11): \"| 10 years + | As much as wanted | 2 L / day |\"\n\nProduce the recommendation.",
+  "prompt_chars": 12303,
+  "checker_ms": 0.0,
+  "recommendation": {
+    "differential": [
+      {
+        "disease": "dengue",
+        "likelihood": "most_likely",
+        "status": "probable",
+        "reason": "Fever 4 days, severe headache, retro‑orbital pain, myalgia, nausea, vomiting and severe abdominal pain meet dengue criteria and warning signs",
+        "supporting_findings": [
+          "high fever",
+          "severe headache",
+          "pain behind the eyes",
+          "body aches",
+          "nausea",
+          "persistent vomiting",
+          "severe abdominal pain"
+        ],
+        "card_ids": [
+          "DEN-DX-005",
+          "DEN-ADV-001"
+        ]
+      }
+    ],
+    "investigations": [],
+    "medications": [
+      {
+        "name": "Paracetamol",
+        "dose": "≤3 g/day",
+        "route": "oral",
+        "frequency": "as needed for fever",
+        "duration": "not stated in retrieved cards",
+        "instructions": "Tepid sponging for fever; do not exceed 3 g/day",
+        "restrictions_for_this_patient": "none",
+        "missing_fields": [],
+        "card_ids": [
+          "DEN-RX-001"
+        ]
+      }
+    ],
+    "advice": [
+      {
+        "type": "referral",
+        "text": "Promptly refer for higher level care and initiate close monitoring for shock due to warning signs (intense continuous abdominal pain, persistent vomiting).",
+        "card_ids": [
+          "DEN-ADV-001"
+        ]
+      },
+      {
+        "type": "warning_signs",
+        "text": "Return to the hospital immediately if any of the following develop: clinical deterioration with settling fever, inability to tolerate oral fluids, severe abdominal pain, lethargy or irritability, bleeding tendency, reduced urine output, cold and clammy extremities, or difficulty breathing.",
+        "card_ids": [
+          "DEN-ADV-011"
+        ]
+      }
+    ],
+    "missing_information": []
+  },
+  "invalid_citations": [],
+  "blocked_citations": [],
+  "elapsed_s": 17.38,
+  "case_id": "C6"
+}

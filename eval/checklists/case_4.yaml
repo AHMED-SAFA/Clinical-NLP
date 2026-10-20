@@ -1,0 +1,16 @@
+case_id: C4
+frozen_on: 2026-10-20
+key_expected:
+  - behaviour: "Probable chikungunya (fever + severe symmetric polyarthralgia + rash), dengue kept in the differential; manage as dengue until dengue is ruled out; paracetamol only (up to 1000 mg four times daily), avoid aspirin and NSAIDs"
+    conditions: "NSAIDs only after dengue is excluded; paracetamol only without pre-existing liver or kidney disease"
+    source: "Chikungunya guideline p.11 (case definition), p.18 (manage as dengue; paracetamol), p.20 (NSAID/steroid), p.26 (NSAID after NS1 negative, afebrile 48 h)"
+  - behaviour: "Investigations: RT-PCR within 5 days of onset (day 3 qualifies), CBC, and dengue NS1 to exclude dengue"
+    source: "Chikungunya p.11 and p.22 (RT-PCR window), p.21 (CBC), p.26 (NS1)"
+unsupported_action_to_avoid: "NSAID or aspirin for the joint pain; steroids in the acute stage"
+restrictions_to_preserve:
+  - "illness day 3 -> NSAID not allowed (p.20, p.26)"
+  - "history none -> paracetamol allowed (p.18)"
+missing_info_expected: []
+auto_hints:
+  must_mention: ["chikungunya", "dengue", "paracetamol"]
+  must_not_recommend: ["ibuprofen|diclofenac|naproxen|aspirin", "steroid|prednisolone"]

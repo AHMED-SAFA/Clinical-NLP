@@ -1,0 +1,504 @@
+{
+  "timestamp": "2026-10-20T16:41:20",
+  "mode": "improved",
+  "model": "groq:openai/gpt-oss-120b",
+  "patient": {
+    "complaints": "sudden profuse watery diarrhoea like rice water, vomiting, thirst",
+    "duration_days": 1.0,
+    "age_years": 30.0,
+    "sex": "male",
+    "pregnant": null,
+    "weight_kg": 60.0,
+    "history": "none",
+    "medicines": "none",
+    "allergies": "none known",
+    "findings": "sunken eyes, restless, drinks eagerly, skin pinch goes back slowly"
+  },
+  "patient_query": "sudden profuse watery diarrhoea like rice water, vomiting, thirst. for 1 days. 30 year old. male. sunken eyes, restless, drinks eagerly, skin pinch goes back slowly. none. none",
+  "retrieved": [
+    {
+      "card_id": "CHO-DX-004",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "Some dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          6
+        ]
+      },
+      "action": "Admit to facility and follow Plan B",
+      "evidence": [
+        {
+          "page": 6,
+          "passage": "Some  No danger signs AND at least 2 of the following: • Irritable or restless Sunken eyes • Rapid pulse • Thirsty (drinks eagerly) • Skin pinch goes back slowly"
+        }
+      ],
+      "rrf": 0.03279,
+      "dense_rank": 1,
+      "bm25_rank": 1
+    },
+    {
+      "card_id": "CHO-DX-003",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "Severe dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          6
+        ]
+      },
+      "action": "Admit to facility and follow Plan CC",
+      "evidence": [
+        {
+          "page": 6,
+          "passage": "Severe  One or more danger signs: • Lethargic or unconscious • Absent or weak pulse • Respiratory distress OR at least 2 of the following: • Sunken eyes • Not able to drink or drinks poorly • Skin pinch goes back very slowly"
+        }
+      ],
+      "rrf": 0.03226,
+      "dense_rank": 2,
+      "bm25_rank": 2
+    },
+    {
+      "card_id": "CHO-DX-001",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "Suspected cholera case definition (outside outbreak)",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          5
+        ]
+      },
+      "action": "Manage as cholera case",
+      "evidence": [
+        {
+          "page": 5,
+          "passage": "suspected cholera: any patient ≥2 years presenting with acute watery diarrhoea and severe dehydration or dying from acute watery diarrhoea."
+        }
+      ],
+      "rrf": 0.0315,
+      "dense_rank": 3,
+      "bm25_rank": 4
+    },
+    {
+      "card_id": "CHO-DX-005",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "No dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          6
+        ]
+      },
+      "action": "Do not admit; follow Plan A",
+      "evidence": [
+        {
+          "page": 6,
+          "passage": "No  • Awake and alert • Normal pulse • Normal thirst • Eyes not sunken • Skin pinch normal"
+        }
+      ],
+      "rrf": 0.0315,
+      "dense_rank": 4,
+      "bm25_rank": 3
+    },
+    {
+      "card_id": "CHO-DX-002",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "Suspected cholera case definition (during outbreak)",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          5
+        ]
+      },
+      "action": "Manage as cholera case",
+      "evidence": [
+        {
+          "page": 5,
+          "passage": "Where a cholera outbreak is declared: any person presenting with or dying from acute watery diarrhoea."
+        }
+      ],
+      "rrf": 0.03009,
+      "dense_rank": 8,
+      "bm25_rank": 5
+    },
+    {
+      "card_id": "CHO-RX-014",
+      "disease": "cholera",
+      "category": "medication",
+      "title": "Cholera rehydration – Plan C (children >1 yr and adults)",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          12
+        ]
+      },
+      "action": "Administer Ringers lactate 100 mL/kg total volume over 3 hours (initial 30‑minute bolus then remainder over 2½ hours)",
+      "evidence": [
+        {
+          "page": 12,
+          "passage": "Children >1 year old, and adults (plan C is 100mL/kg in 3 hours)"
+        }
+      ],
+      "rrf": 0.02797,
+      "dense_rank": 18,
+      "bm25_rank": 6
+    },
+    {
+      "card_id": "CHO-RX-001",
+      "disease": "cholera",
+      "category": "medication",
+      "title": "IV Ringer’s lactate for severe dehydration or shock (age‑based)",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          5
+        ]
+      },
+      "action": "Administer IV Ringer’s lactate according to age‑specific dosing",
+      "evidence": [
+        {
+          "page": 5,
+          "passage": "Give intravenous Ringer’s lactate… Age under 1 year 3300 mL/kg in 60 minutes, then 7700 mL/kg over the next 55 hours"
+        },
+        {
+          "page": 5,
+          "passage": "Age 1 year+ < 11 years 3300 mL/kg in 30 minutes, then 7700 mL/kg over the next 22½ hours"
+        }
+      ],
+      "rrf": 0.02786,
+      "dense_rank": 16,
+      "bm25_rank": 8
+    },
+    {
+      "card_id": "CHI-DX-006",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Severe Chikungunya Fever",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          15
+        ]
+      },
+      "action": "Classify patient as having severe chikungunya and initiate appropriate supportive care and monitoring",
+      "evidence": [
+        {
+          "page": 15,
+          "passage": "Severe\n  Persistent high grade fever\n  Severe arthralgia/Arthritis\n  Persistent vomiting / Diarrhoea\n  Altered sensorium\n  Bleeding (GI bleeding due to use of drugs e.g. analgesics)\n  Shock due to persistent vomiting and diarrhoea"
+        }
+      ],
+      "rrf": 0.02727,
+      "dense_rank": 21,
+      "bm25_rank": 7
+    },
+    {
+      "card_id": "DEN-ADV-011",
+      "disease": "dengue",
+      "category": "advice",
+      "title": "Warning signs for immediate return or hospitalization",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          48
+        ]
+      },
+      "action": "Advise patients to return to the hospital immediately if any of the listed warning signs develop.",
+      "evidence": [
+        {
+          "page": 48,
+          "passage": "Advise patients to return to the hospital immediately, if they develop any of the following conditions: Clinical deterioration with settling of fever; Inability to tolerate oral fluids; Severe abdominal pain; Lethargy or irritability / restlessness"
+        },
+        {
+          "page": 48,
+          "passage": "Bleeding tendency like abnormal vaginal bleeding, blood vomiting, black tarry stool, bleeding from nose and gum."
+        },
+        {
+          "page": 48,
+          "passage": "Reduced urine output for the last 4-6 hours (<150-200 ml/ 4-6 hours if weight is 50kg or more)"
+        },
+        {
+          "page": 48,
+          "passage": "Cold and clammy extremities"
+        },
+        {
+          "page": 48,
+          "passage": "Difficulty in breathing."
+        }
+      ],
+      "rrf": 0.02712,
+      "dense_rank": 7,
+      "bm25_rank": 22
+    },
+    {
+      "card_id": "CHO-ADV-001",
+      "disease": "cholera",
+      "category": "advice",
+      "title": "Monitoring during rehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          5
+        ]
+      },
+      "action": "Reassess patient every 15–30 minutes; if no signs of dehydration and able to drink, consider discharge.",
+      "evidence": [
+        {
+          "page": 5,
+          "passage": "Reassess every 15–30 minutes… Has no signs of dehydration AND able to drink AND awake and alert…"
+        }
+      ],
+      "rrf": 0.02665,
+      "dense_rank": 6,
+      "bm25_rank": 27
+    },
+    {
+      "card_id": "CHO-ADV-006",
+      "disease": "cholera",
+      "category": "advice",
+      "title": "Discharge education on when to seek care",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          14
+        ]
+      },
+      "action": "Ensure patients and caregivers understand that anyone with at least 33 episodes of diarrhoea in 24 hours should seek treatment.",
+      "evidence": [
+        {
+          "page": 14,
+          "passage": "Ensure patients and their caregivers understand that anyone with at least 33 episodes of diarrhoea in 24 hours should seek treatment."
+        }
+      ],
+      "rrf": 0.02655,
+      "dense_rank": 12,
+      "bm25_rank": 19
+    },
+    {
+      "card_id": "CHO-RX-015",
+      "disease": "cholera",
+      "category": "medication",
+      "title": "Cholera rehydration – Plan C (infants <1 yr)",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          12
+        ]
+      },
+      "action": "Administer Ringers lactate 30 mL/kg over 1 hour then 70 mL/kg over 5 hours (total 100 mL/kg)",
+      "evidence": [
+        {
+          "page": 12,
+          "passage": "<11 month 3–4 kg 350 mL 105 mL in 1 hour ... 245 mL in 5 hours"
+        }
+      ],
+      "rrf": 0.02608,
+      "dense_rank": 22,
+      "bm25_rank": 12
+    }
+  ],
+  "applicability": {
+    "CHO-DX-004": {
+      "card_id": "CHO-DX-004",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has irritable or restless",
+        "symptom has rapid pulse"
+      ],
+      "variants_selected": []
+    },
+    "CHO-DX-003": {
+      "card_id": "CHO-DX-003",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has lethargic or unconscious",
+        "symptom has absent or weak pulse",
+        "symptom has respiratory distress",
+        "symptom has unable to drink or drinks poorly"
+      ],
+      "variants_selected": []
+    },
+    "CHO-DX-001": {
+      "card_id": "CHO-DX-001",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has severe dehydration (or dying from acute watery diarrhoea)"
+      ],
+      "variants_selected": []
+    },
+    "CHO-DX-005": {
+      "card_id": "CHO-DX-005",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has awake and alert",
+        "symptom has normal pulse",
+        "symptom has normal thirst"
+      ],
+      "variants_selected": []
+    },
+    "CHO-DX-002": {
+      "card_id": "CHO-DX-002",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has dying (from acute watery diarrhoea)"
+      ],
+      "variants_selected": []
+    },
+    "CHO-RX-014": {
+      "card_id": "CHO-RX-014",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "CHO-RX-001": {
+      "card_id": "CHO-RX-001",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has severe dehydration"
+      ],
+      "variants_selected": []
+    },
+    "CHI-DX-006": {
+      "card_id": "CHI-DX-006",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "DEN-ADV-011": {
+      "card_id": "DEN-ADV-011",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "any of: symptom has clinical deterioration with settling of fever; symptom has inability to tolerate oral fluids; symptom has severe abdominal pain; symptom has lethargy or irritability / restlessness; symptom has bleeding tendency (abnormal vaginal bleeding, blood vomiting, black tarry stool, nose or gum bleeding); symptom has reduced urine output for last 4-6 hours (<150-200 ml/4-6 hours if weight ≥50 kg); symptom has cold and clammy extremities; symptom has difficulty breathing"
+      ],
+      "variants_selected": []
+    },
+    "CHO-ADV-001": {
+      "card_id": "CHO-ADV-001",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "CHO-ADV-006": {
+      "card_id": "CHO-ADV-006",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "CHO-RX-015": {
+      "card_id": "CHO-RX-015",
+      "status": "NOT_MET",
+      "reasons": [
+        "requirement not met: age_years < 1.0"
+      ],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    }
+  },
+  "prompt": "## PATIENT\nChief complaints: sudden profuse watery diarrhoea like rice water, vomiting, thirst\nIllness duration (days): 1.0\nAge (years): 30.0\nSex: male\nPregnant: not stated\nWeight (kg): 60.0\nMedical history: none\nCurrent medicines: none\nAllergies: none known\nFindings/results available: sunken eyes, restless, drinks eagerly, skin pinch goes back slowly\n\n## PROTOCOL CARDS\n[CHO-DX-004] disease=cholera category=probable_diagnosis | Some dehydration\nPrerequisites: irritable or restless; sunken eyes; rapid pulse; thirsty (drinks eagerly); skin pinch goes back slowly\nApplies only if ALL: symptom has irritable or restless; symptom has sunken eyes; symptom has rapid pulse; symptom has thirsty (drinks eagerly); symptom has skin pinch goes back slowly\nAction: Admit to facility and follow Plan B\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.6\nEvidence (p.6): \"Some  No danger signs AND at least 2 of the following: • Irritable or restless Sunken eyes • Rapid pulse • Thirsty (drinks eagerly) • Skin pinch goes back slowly\"\nAPPLICABILITY CHECK [CHO-DX-004]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has irritable or restless; symptom has rapid pulse\n\n[CHO-DX-003] disease=cholera category=probable_diagnosis | Severe dehydration\nPrerequisites: lethargic or unconscious; absent or weak pulse; respiratory distress; sunken eyes; unable to drink or drinks poorly; skin pinch returns very slowly\nApplies only if ALL: symptom has lethargic or unconscious; symptom has absent or weak pulse; symptom has respiratory distress; symptom has sunken eyes; symptom has unable to drink or drinks poorly; symptom has skin pinch returns very slowly\nAction: Admit to facility and follow Plan CC\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.6\nEvidence (p.6): \"Severe  One or more danger signs: • Lethargic or unconscious • Absent or weak pulse • Respiratory distress OR at least 2 of the following: • Sunken eyes • Not able to drink or drinks poorly • Skin pinch goes back very slowly\"\nAPPLICABILITY CHECK [CHO-DX-003]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has lethargic or unconscious; symptom has absent or weak pulse; symptom has respiratory distress; symptom has unable to drink or drinks poorly\n\n[CHO-DX-001] disease=cholera category=probable_diagnosis | Suspected cholera case definition (outside outbreak)\nPrerequisites: acute watery diarrhoea; severe dehydration or dying from acute watery diarrhoea\nApplies only if ALL: age_years >= 2.0; symptom has acute watery diarrhoea; symptom has severe dehydration (or dying from acute watery diarrhoea)\nAction: Manage as cholera case\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.5\nEvidence (p.5): \"suspected cholera: any patient ≥2 years presenting with acute watery diarrhoea and severe dehydration or dying from acute watery diarrhoea.\"\nAPPLICABILITY CHECK [CHO-DX-001]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has severe dehydration (or dying from acute watery diarrhoea)\n\n[CHO-DX-005] disease=cholera category=probable_diagnosis | No dehydration\nPrerequisites: awake and alert; normal pulse; normal thirst; eyes not sunken; skin pinch normal\nApplies only if ALL: symptom has awake and alert; symptom has normal pulse; symptom has normal thirst; symptom has eyes not sunken; symptom has skin pinch normal\nAction: Do not admit; follow Plan A\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.6\nEvidence (p.6): \"No  • Awake and alert • Normal pulse • Normal thirst • Eyes not sunken • Skin pinch normal\"\nAPPLICABILITY CHECK [CHO-DX-005]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has awake and alert; symptom has normal pulse; symptom has normal thirst\n\n[CHO-DX-002] disease=cholera category=probable_diagnosis | Suspected cholera case definition (during outbreak)\nPrerequisites: acute watery diarrhoea; dying from acute watery diarrhoea\nApplies only if ALL: symptom has acute watery diarrhoea; symptom has dying (from acute watery diarrhoea)\nAction: Manage as cholera case\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.5\nEvidence (p.5): \"Where a cholera outbreak is declared: any person presenting with or dying from acute watery diarrhoea.\"\nAPPLICABILITY CHECK [CHO-DX-002]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has dying (from acute watery diarrhoea)\n\n[CHO-RX-014] disease=cholera category=medication | Cholera rehydration – Plan C (children >1 yr and adults)\nPrerequisites: cholera suspected\nApplies only if ALL: age_years >= 1.0\nAction: Administer Ringers lactate 100 mL/kg total volume over 3 hours (initial 30‑minute bolus then remainder over 2½ hours)\nMedication: Ringers lactate | dose: 100 mL/kg | route: IV | freq: single course | duration: 3 hours | instructions: Give 30 min bolus (≈8 mL/min for 10‑13 kg, ≈10 mL/min for 13‑15 kg, etc.) then the remaining volume over 2½ hours | restrictions: not stated\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.12\nEvidence (p.12): \"Children >1 year old, and adults (plan C is 100mL/kg in 3 hours)\"\nAPPLICABILITY CHECK [CHO-RX-014]: status=APPLICABLE\n\n[CHO-RX-001] disease=cholera category=medication | IV Ringer’s lactate for severe dehydration or shock (age‑based)\nPrerequisites: severe dehydration; shock\nApplies only if ALL: symptom has severe dehydration\nAction: Administer IV Ringer’s lactate according to age‑specific dosing\n  Variant WHEN age_years < 1.0 (under 1 year): Give 3300 mL/kg over 60 minutes then 7700 mL/kg over the next 55 hours || Ringer’s lactate | dose: 3300 mL/kg then 7700 mL/kg | route: intravenous | freq: continuous infusion | duration: first 60 min then 55 h | instructions: monitor for hypoglycaemia and treat rapidly | restrictions: not stated\n  Variant WHEN age_years >= 1.0 (≥1 year and <11 years) AND age_years < 11.0: Give 3300 mL/kg over 30 minutes then 7700 mL/kg over the next 22½ hours || Ringer’s lactate | dose: 3300 mL/kg then 7700 mL/kg | route: intravenous | freq: continuous infusion | duration: first 30 min then 22½ h | instructions: monitor for hypoglycaemia and treat rapidly | restrictions: not stated\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.5\nEvidence (p.5): \"Give intravenous Ringer’s lactate… Age under 1 year 3300 mL/kg in 60 minutes, then 7700 mL/kg over the next 55 hours\"\nEvidence (p.5): \"Age 1 year+ < 11 years 3300 mL/kg in 30 minutes, then 7700 mL/kg over the next 22½ hours\"\nAPPLICABILITY CHECK [CHO-RX-001]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has severe dehydration\n\n[CHI-DX-006] disease=chikungunya category=probable_diagnosis | Severe Chikungunya Fever\nPrerequisites: Persistent high grade fever; Severe arthralgia/Arthritis; Persistent vomiting; Diarrhoea; Altered sensorium; GI bleeding due to use of drugs e.g. analgesics; Shock due to persistent vomiting and diarrhoea\nAction: Classify patient as having severe chikungunya and initiate appropriate supportive care and monitoring\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.15\nEvidence (p.15): \"Severe\n  Persistent high grade fever\n  Severe arthralgia/Arthritis\n  Persistent vomiting / Diarrhoea\n  Altered sensorium\n  Bleeding (GI bleeding due to use of drugs e.g. analgesics)\n  Shock due to persistent vomiting and diarrhoea\"\nAPPLICABILITY CHECK [CHI-DX-006]: status=APPLICABLE\n\n[DEN-ADV-011] disease=dengue category=advice | Warning signs for immediate return or hospitalization\nPrerequisites: not stated\nApplies if ANY: symptom has clinical deterioration with settling of fever; symptom has inability to tolerate oral fluids; symptom has severe abdominal pain; symptom has lethargy or irritability / restlessness; symptom has bleeding tendency (abnormal vaginal bleeding, blood vomiting, black tarry stool, nose or gum bleeding); symptom has reduced urine output for last 4-6 hours (<150-200 ml/4-6 hours if weight ≥50 kg); symptom has cold and clammy extremities; symptom has difficulty breathing\nAction: Advise patients to return to the hospital immediately if any of the listed warning signs develop.\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.48\nEvidence (p.48): \"Advise patients to return to the hospital immediately, if they develop any of the following conditions: Clinical deterioration with settling of fever; Inability to tolerate oral fluids; Severe abdominal pain; Lethargy or irritability / restlessness\"\nEvidence (p.48): \"Bleeding tendency like abnormal vaginal bleeding, blood vomiting, black tarry stool, bleeding from nose and gum.\"\nEvidence (p.48): \"Reduced urine output for the last 4-6 hours (<150-200 ml/ 4-6 hours if weight is 50kg or more)\"\nEvidence (p.48): \"Cold and clammy extremities\"\nEvidence (p.48): \"Difficulty in breathing.\"\nAPPLICABILITY CHECK [DEN-ADV-011]: status=APPLICABLE || criteria not found in patient record (unconfirmed): any of: symptom has clinical deterioration with settling of fever; symptom has inability to tolerate oral fluids; symptom has severe abdominal pain; symptom has lethargy or irritability / restlessness; symptom has bleeding tendency (abnormal vaginal bleeding, blood vomiting, black tarry stool, nose or gum bleeding); symptom has reduced urine output for last 4-6 hours (<150-200 ml/4-6 hours if weight ≥50 kg); symptom has cold and clammy extremities; symptom has difficulty breathing\n\n[CHO-ADV-001] disease=cholera category=advice | Monitoring during rehydration\nPrerequisites: severe dehydration; some dehydration\nAction: Reassess patient every 15–30 minutes; if no signs of dehydration and able to drink, consider discharge.\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.5\nEvidence (p.5): \"Reassess every 15–30 minutes… Has no signs of dehydration AND able to drink AND awake and alert…\"\nAPPLICABILITY CHECK [CHO-ADV-001]: status=APPLICABLE\n\n[CHO-ADV-006] disease=cholera category=advice | Discharge education on when to seek care\nPrerequisites: diarrhoea\nAction: Ensure patients and caregivers understand that anyone with at least 33 episodes of diarrhoea in 24 hours should seek treatment.\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.14\nEvidence (p.14): \"Ensure patients and their caregivers understand that anyone with at least 33 episodes of diarrhoea in 24 hours should seek treatment.\"\nAPPLICABILITY CHECK [CHO-ADV-006]: status=APPLICABLE\n\n[CHO-RX-015] disease=cholera category=medication | Cholera rehydration – Plan C (infants <1 yr)\nPrerequisites: cholera suspected\nApplies only if ALL: age_years < 1.0\nAction: Administer Ringers lactate 30 mL/kg over 1 hour then 70 mL/kg over 5 hours (total 100 mL/kg)\nMedication: Ringers lactate | dose: 30 mL/kg then 70 mL/kg | route: IV | freq: single course | duration: 6 hours total | instructions: Give 30 mL/kg in the first hour, then 70 mL/kg over the next 5 hours | restrictions: not stated\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.12\nEvidence (p.12): \"<11 month 3–4 kg 350 mL 105 mL in 1 hour ... 245 mL in 5 hours\"\nAPPLICABILITY CHECK [CHO-RX-015]: status=NOT_MET || reasons: requirement not met: age_years < 1.0\n\nProduce the recommendation.",
+  "prompt_chars": 13148,
+  "checker_ms": 0.85,
+  "recommendation": {
+    "differential": [
+      {
+        "disease": "cholera",
+        "likelihood": "most_likely",
+        "status": "probable",
+        "reason": "Patient presents with sudden profuse watery (rice‑water) diarrhoea, vomiting, intense thirst and signs of dehydration (sunken eyes, restless, skin pinch returns slowly).",
+        "supporting_findings": [
+          "watery diarrhoea",
+          "sunken eyes",
+          "restless",
+          "drinks eagerly",
+          "skin pinch goes back slowly"
+        ],
+        "card_ids": [
+          "CHO-DX-004"
+        ]
+      }
+    ],
+    "investigations": [],
+    "medications": [
+      {
+        "name": "Ringers lactate",
+        "dose": "100 mL/kg",
+        "route": "IV",
+        "frequency": "single course",
+        "duration": "3 hours",
+        "instructions": "Give 30‑minute bolus (≈8 mL/min for 10‑13 kg, ≈10 mL/min for 13‑15 kg, etc.) then the remaining volume over 2½ hours",
+        "restrictions_for_this_patient": "not stated in retrieved cards",
+        "missing_fields": [],
+        "card_ids": [
+          "CHO-RX-014"
+        ]
+      }
+    ],
+    "advice": [
+      {
+        "type": "self_care",
+        "text": "Reassess patient every 15–30 minutes during rehydration; if no signs of dehydration and able to drink, consider discharge.",
+        "card_ids": [
+          "CHO-ADV-001"
+        ]
+      },
+      {
+        "type": "self_care",
+        "text": "Educate patient/caregiver that anyone with ≥33 episodes of diarrhoea in 24 h should seek treatment.",
+        "card_ids": [
+          "CHO-ADV-006"
+        ]
+      }
+    ],
+    "missing_information": [
+      {
+        "field": "rapid pulse",
+        "why_needed": "Needed to confirm 'some dehydration' classification per CHO-DX-004 and to apply appropriate dehydration plan.",
+        "card_ids": [
+          "CHO-DX-004"
+        ]
+      }
+    ]
+  },
+  "invalid_citations": [],
+  "blocked_citations": [],
+  "elapsed_s": 33.01,
+  "case_id": "C3"
+}

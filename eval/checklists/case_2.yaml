@@ -1,0 +1,16 @@
+case_id: C2
+frozen_on: 2026-10-20
+key_expected:
+  - behaviour: "BP 156/98 at one visit is in the 130-159/85-99 band: hypertension is only probable. Confirm with repeated office measurements (3 readings per visit, 2-3 visits at 1-4 week intervals) and out-of-office BP if available; do not start drug treatment immediately"
+    conditions: "immediate treatment applies at >=160/100 or with hypertension-mediated organ damage"
+    source: "Hypertension guideline p.46 (diagnosis), p.47 (Table 3), p.65 (Table 6)"
+  - behaviour: "Baseline investigations: sodium, potassium, creatinine/eGFR, lipid profile and fasting glucose if available, urine dipstick, 12-lead ECG"
+    conditions: "tests must not delay treatment when treatment is indicated"
+    source: "Hypertension p.51"
+unsupported_action_to_avoid: "Declaring hypertension confirmed and starting an antihypertensive immediately from a single visit"
+restrictions_to_preserve:
+  - "type 2 diabetes is a comorbidity/cardiovascular risk factor (p.50 Table 4); check the target-BP wording on p.65"
+missing_info_expected: ["previous BP readings / out-of-office BP", "signs of organ damage (HMOD)"]
+auto_hints:
+  must_mention: ["hypertension", "repeat|confirm", "ECG|creatinine"]
+  must_not_recommend: []

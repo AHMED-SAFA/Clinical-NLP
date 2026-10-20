@@ -1,0 +1,532 @@
+{
+  "timestamp": "2026-10-20T16:40:00",
+  "mode": "improved",
+  "model": "groq:openai/gpt-oss-120b",
+  "patient": {
+    "complaints": "occasional headache, no other complaints",
+    "duration_days": null,
+    "age_years": 58.0,
+    "sex": "male",
+    "pregnant": null,
+    "weight_kg": 72.0,
+    "history": "type 2 diabetes for 6 years",
+    "medicines": "metformin 500 mg twice daily",
+    "allergies": "none known",
+    "findings": "clinic BP 156/98 mmHg on two separate visits, no chest pain, no breathlessness"
+  },
+  "patient_query": "occasional headache, no other complaints. 58 year old. male. clinic BP 156/98 mmHg on two separate visits, no chest pain, no breathlessness. type 2 diabetes for 6 years. metformin 500 mg twice daily",
+  "retrieved": [
+    {
+      "card_id": "HTN-DX-002",
+      "disease": "hypertension",
+      "category": "probable_diagnosis",
+      "title": "Hypertension diagnosis requiring repeat measurements (moderate BP)",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          46
+        ]
+      },
+      "action": "Perform repeat BP measurements on three separate occasions within 1‑4 weeks before confirming diagnosis",
+      "evidence": [
+        {
+          "page": 46,
+          "passage": "When the initial SBP is between 140 and 159 mmHg, or the DBP is between 90 and 99 mmHg, repeat measurements should be performed on three separate occasions within a period of 1 to 4 weeks to determine whether a diagnosis of hypertension is valid"
+        }
+      ],
+      "rrf": 0.03126,
+      "dense_rank": 3,
+      "bm25_rank": 5
+    },
+    {
+      "card_id": "HTN-ADV-001",
+      "disease": "hypertension",
+      "category": "advice",
+      "title": "Follow‑up BP measurement frequency when hypertension not diagnosed",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          46
+        ]
+      },
+      "action": "Measure clinic blood pressure at least every 3 years; measure more frequently if BP is close to 140/90 mmHg",
+      "evidence": [
+        {
+          "page": 46,
+          "passage": "If hypertension is not diagnosed, measure the person's clinic blood pressure at least every 3 years subsequently, and consider measuring it more frequently if the person's clinic blood pressure is close to 140/90 mmHg"
+        }
+      ],
+      "rrf": 0.03125,
+      "dense_rank": 4,
+      "bm25_rank": 4
+    },
+    {
+      "card_id": "HTN-IX-103",
+      "disease": "hypertension",
+      "category": "investigation",
+      "title": "Follow-up BP measurement schedule",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          65
+        ]
+      },
+      "action": "",
+      "evidence": [
+        {
+          "page": 65,
+          "passage": "<130 and <85   Remeasure within 3 years (1 year in those with other risk factors)"
+        },
+        {
+          "page": 65,
+          "passage": "130-159 and/or 85-99   Confirm with repeated office BP measures within 1- 4 weeks"
+        },
+        {
+          "page": 65,
+          "passage": "≥160 and/or 100   Evaluate and Iniƒate treatment immediately"
+        }
+      ],
+      "rrf": 0.03009,
+      "dense_rank": 5,
+      "bm25_rank": 8
+    },
+    {
+      "card_id": "HTN-ADV-002",
+      "disease": "hypertension",
+      "category": "advice",
+      "title": "Medication review for postural hypotension with ≥20 mmHg systolic drop on standing",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          47
+        ]
+      },
+      "action": "Medication is to be reviewed; subsequent BP should be measured with the person standing and the patient may be referred to specialist care if symptoms persist.",
+      "evidence": [
+        {
+          "page": 47,
+          "passage": "If the systolic BP falls by ≥ 20 mmHg when the person is standing, medicaƟon is to be reviewed, subsequent BP is to be measured with the person standing and the paƟent may be referred to specialist care if symptoms of postural hypotension persist."
+        }
+      ],
+      "rrf": 0.03002,
+      "dense_rank": 2,
+      "bm25_rank": 12
+    },
+    {
+      "card_id": "HTN-IX-002",
+      "disease": "hypertension",
+      "category": "investigation",
+      "title": "Blood pressure re‑measurement schedule based on office BP level",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          47
+        ]
+      },
+      "action": "",
+      "evidence": [
+        {
+          "page": 47,
+          "passage": "Remeasure within 3 years (1 year in those with other risk factors)"
+        }
+      ],
+      "rrf": 0.02924,
+      "dense_rank": 11,
+      "bm25_rank": 6
+    },
+    {
+      "card_id": "CHO-ADV-004",
+      "disease": "cholera",
+      "category": "advice",
+      "title": "Oral Rehydration Solution (ORS) for patients with no sign of dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          11
+        ]
+      },
+      "action": "Provide ORS according to age‑specific volume",
+      "evidence": [
+        {
+          "page": 11,
+          "passage": "| < 24 months | 50 - 100 mL | 500 mL / day |"
+        },
+        {
+          "page": 11,
+          "passage": "| 2-9 years | 100 – 200 mL | 1L/day |"
+        },
+        {
+          "page": 11,
+          "passage": "| 10 years + | As much as wanted | 2 L / day |"
+        }
+      ],
+      "rrf": 0.02921,
+      "dense_rank": 18,
+      "bm25_rank": 1
+    },
+    {
+      "card_id": "HTN-IX-101",
+      "disease": "hypertension",
+      "category": "investigation",
+      "title": "Assess major cardiovascular risk factors for hypertension",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          50
+        ]
+      },
+      "action": "Measure systolic and diastolic blood pressure, assess tobacco use, obtain lipid profile (total cholesterol, LDL, HDL), screen for diabetes mellitus, record age, obtain family history of premature cardiovascular disease, and measure waist circumference",
+      "evidence": [
+        {
+          "page": 50,
+          "passage": "Table 4: Major risk factors for cardiovascular diseases    Levels of SBP and DBP   Tobacco use    Dyslipidemia  o  Total cholesterol >5.1 mmol/L  o  LDL >3 mmol/l, OR  o  HDL <1 (men) and <1.2 mmol/l (women)    Diabetes mellitus   Age (>55 years for men, >65 years for women)    Family history of premature cardiovascular diseases  o  (men <55 years or women <65 years)    Central obesity  o  (Waist circumference >90 cm for men, >80 cm for women)"
+        }
+      ],
+      "rrf": 0.02763,
+      "dense_rank": 1,
+      "bm25_rank": 29
+    },
+    {
+      "card_id": "DEN-ADV-006",
+      "disease": "dengue",
+      "category": "advice",
+      "title": "Admission for high‑risk patients",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          46
+        ]
+      },
+      "action": "Consider hospital admission even without other severity criteria.",
+      "evidence": [
+        {
+          "page": 46,
+          "passage": "Patients at high risk for more severe disease and its complications may need admission even without the above criteria."
+        },
+        {
+          "page": 46,
+          "passage": "  Pregnant women"
+        },
+        {
+          "page": 46,
+          "passage": "  Elderly"
+        },
+        {
+          "page": 46,
+          "passage": "  Obesity"
+        },
+        {
+          "page": 46,
+          "passage": "  Patients on anticoagulants"
+        },
+        {
+          "page": 46,
+          "passage": "  Age <1 year or >65 years"
+        }
+      ],
+      "rrf": 0.0274,
+      "dense_rank": 13,
+      "bm25_rank": 13
+    },
+    {
+      "card_id": "HTN-DX-001",
+      "disease": "hypertension",
+      "category": "probable_diagnosis",
+      "title": "Hypertension diagnosis on single visit (severe BP)",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          46
+        ]
+      },
+      "action": "Diagnose hypertension without further repeat measurements",
+      "evidence": [
+        {
+          "page": 46,
+          "passage": "The diagnosis might be made on a single visit, if BP is ≥160/100 mmHg or there is accompanying evidence of hypertension mediated organ damage (HMOD)"
+        }
+      ],
+      "rrf": 0.02705,
+      "dense_rank": 12,
+      "bm25_rank": 16
+    },
+    {
+      "card_id": "CHO-RX-014",
+      "disease": "cholera",
+      "category": "medication",
+      "title": "Cholera rehydration – Plan C (children >1 yr and adults)",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          12
+        ]
+      },
+      "action": "Administer Ringers lactate 100 mL/kg total volume over 3 hours (initial 30‑minute bolus then remainder over 2½ hours)",
+      "evidence": [
+        {
+          "page": 12,
+          "passage": "Children >1 year old, and adults (plan C is 100mL/kg in 3 hours)"
+        }
+      ],
+      "rrf": 0.02648,
+      "dense_rank": 22,
+      "bm25_rank": 10
+    },
+    {
+      "card_id": "HTN-IX-014",
+      "disease": "hypertension",
+      "category": "investigation",
+      "title": "Follow‑up blood pressure measurement schedule after initial reading",
+      "source": {
+        "title": "National Guideline on Hypertension",
+        "version": "Second edition 2023",
+        "pdf_pages": [
+          65
+        ]
+      },
+      "action": "",
+      "evidence": [
+        {
+          "page": 65,
+          "passage": "<130 and <85  Remeasure within 3 years (1 year in those with other risk factors)"
+        }
+      ],
+      "rrf": 0.02632,
+      "dense_rank": 15,
+      "bm25_rank": 17
+    },
+    {
+      "card_id": "CHO-DX-005",
+      "disease": "cholera",
+      "category": "probable_diagnosis",
+      "title": "No dehydration",
+      "source": {
+        "title": "Clinical tools for cholera treatment facilities",
+        "version": "v1.0, 2024",
+        "pdf_pages": [
+          6
+        ]
+      },
+      "action": "Do not admit; follow Plan A",
+      "evidence": [
+        {
+          "page": 6,
+          "passage": "No  • Awake and alert • Normal pulse • Normal thirst • Eyes not sunken • Skin pinch normal"
+        }
+      ],
+      "rrf": 0.02571,
+      "dense_rank": 26,
+      "bm25_rank": 11
+    }
+  ],
+  "applicability": {
+    "HTN-DX-002": {
+      "card_id": "HTN-DX-002",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "any of: symptom has sbp140-159 (initial systolic 140-159 mmHg); symptom has dbp90-99 (initial diastolic 90-99 mmHg)"
+      ],
+      "variants_selected": []
+    },
+    "HTN-ADV-001": {
+      "card_id": "HTN-ADV-001",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "HTN-IX-103": {
+      "card_id": "HTN-IX-103",
+      "status": "MISSING_INFO",
+      "reasons": [],
+      "missing": [
+        "finding (needed to choose variant #0)",
+        "finding (needed to choose variant #1)",
+        "finding (needed to choose variant #2)"
+      ],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "HTN-ADV-002": {
+      "card_id": "HTN-ADV-002",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "finding has systolic_drop_>=20mmHg_on_standing"
+      ],
+      "variants_selected": []
+    },
+    "HTN-IX-002": {
+      "card_id": "HTN-IX-002",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "any of: finding has office_bp_<130/85; finding has office_bp_130-159/85-99; finding has office_bp_>160/100"
+      ],
+      "variants_selected": []
+    },
+    "CHO-ADV-004": {
+      "card_id": "CHO-ADV-004",
+      "status": "NOT_MET",
+      "reasons": [
+        "requirement not met: age_years < 2.0 (<24 months)"
+      ],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": [
+        "#1 WHEN age_years >= 2.0 -> Give enough ORS packets for each loose stool, 100-200 mL per packet, total 1 L per day",
+        "#2 WHEN age_years >= 10.0 -> Give enough ORS packets for each loose stool, as much as wanted, total 2 L per day"
+      ]
+    },
+    "HTN-IX-101": {
+      "card_id": "HTN-IX-101",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "DEN-ADV-006": {
+      "card_id": "DEN-ADV-006",
+      "status": "NOT_MET",
+      "reasons": [
+        "requirement not met: pregnant == True",
+        "requirement not met: age_years < 1.0",
+        "requirement not met: age_years > 65.0"
+      ],
+      "missing": [
+        "obesity (needed for: obesity == True)"
+      ],
+      "unconfirmed": [
+        "medicine has anticoagulants",
+        "history has diabetes mellitus",
+        "history has hypertension",
+        "history has chronic renal failure",
+        "history has established liver disease",
+        "history has ischemic heart disease",
+        "history has solid organ/bone marrow transplant",
+        "history has active malignancies",
+        "history has peptic ulcer disease",
+        "medicine has steroid",
+        "medicine has NSAID"
+      ],
+      "variants_selected": []
+    },
+    "HTN-DX-001": {
+      "card_id": "HTN-DX-001",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has sbp>=160 (systolic blood pressure)",
+        "symptom has dbp>=100 (diastolic blood pressure)"
+      ],
+      "variants_selected": []
+    },
+    "CHO-RX-014": {
+      "card_id": "CHO-RX-014",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "HTN-IX-014": {
+      "card_id": "HTN-IX-014",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [],
+      "variants_selected": []
+    },
+    "CHO-DX-005": {
+      "card_id": "CHO-DX-005",
+      "status": "APPLICABLE",
+      "reasons": [],
+      "missing": [],
+      "unconfirmed": [
+        "symptom has awake and alert",
+        "symptom has normal pulse",
+        "symptom has normal thirst",
+        "symptom has eyes not sunken",
+        "symptom has skin pinch normal"
+      ],
+      "variants_selected": []
+    }
+  },
+  "prompt": "## PATIENT\nChief complaints: occasional headache, no other complaints\nIllness duration (days): not stated\nAge (years): 58.0\nSex: male\nPregnant: not stated\nWeight (kg): 72.0\nMedical history: type 2 diabetes for 6 years\nCurrent medicines: metformin 500 mg twice daily\nAllergies: none known\nFindings/results available: clinic BP 156/98 mmHg on two separate visits, no chest pain, no breathlessness\n\n## PROTOCOL CARDS\n[HTN-DX-002] disease=hypertension category=probable_diagnosis | Hypertension diagnosis requiring repeat measurements (moderate BP)\nPrerequisites: not stated\nApplies if ANY: symptom has sbp140-159 (initial systolic 140-159 mmHg); symptom has dbp90-99 (initial diastolic 90-99 mmHg)\nAction: Perform repeat BP measurements on three separate occasions within 1‑4 weeks before confirming diagnosis\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.46\nEvidence (p.46): \"When the initial SBP is between 140 and 159 mmHg, or the DBP is between 90 and 99 mmHg, repeat measurements should be performed on three separate occasions within a period of 1 to 4 weeks to determine whether a diagnosis of hypertension is valid\"\nAPPLICABILITY CHECK [HTN-DX-002]: status=APPLICABLE || criteria not found in patient record (unconfirmed): any of: symptom has sbp140-159 (initial systolic 140-159 mmHg); symptom has dbp90-99 (initial diastolic 90-99 mmHg)\n\n[HTN-ADV-001] disease=hypertension category=advice | Follow‑up BP measurement frequency when hypertension not diagnosed\nPrerequisites: not stated\nAction: Measure clinic blood pressure at least every 3 years; measure more frequently if BP is close to 140/90 mmHg\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.46\nEvidence (p.46): \"If hypertension is not diagnosed, measure the person's clinic blood pressure at least every 3 years subsequently, and consider measuring it more frequently if the person's clinic blood pressure is close to 140/90 mmHg\"\nAPPLICABILITY CHECK [HTN-ADV-001]: status=APPLICABLE\n\n[HTN-IX-103] disease=hypertension category=investigation | Follow-up BP measurement schedule\nPrerequisites: not stated\nAction: \n  Variant WHEN finding < 130 (initial systolic) AND finding < 85 (initial diastolic): Remeasure within 3 years (1 year in those with other risk factors)\n  Variant WHEN finding >= 130 (initial systolic) AND finding <= 159 (initial systolic) AND finding >= 85 (initial diastolic) AND finding <= 99 (initial diastolic): Confirm with repeated office BP measures within 1-4 weeks\n  Variant WHEN finding >= 160 (initial systolic) AND finding >= 100 (initial diastolic): Evaluate and initiate treatment immediately\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.65\nEvidence (p.65): \"<130 and <85   Remeasure within 3 years (1 year in those with other risk factors)\"\nEvidence (p.65): \"130-159 and/or 85-99   Confirm with repeated office BP measures within 1- 4 weeks\"\nEvidence (p.65): \"≥160 and/or 100   Evaluate and Iniƒate treatment immediately\"\nAPPLICABILITY CHECK [HTN-IX-103]: status=MISSING_INFO || missing patient details: finding (needed to choose variant #0); finding (needed to choose variant #1); finding (needed to choose variant #2)\n\n[HTN-ADV-002] disease=hypertension category=advice | Medication review for postural hypotension with ≥20 mmHg systolic drop on standing\nPrerequisites: not stated\nApplies only if ALL: finding has systolic_drop_>=20mmHg_on_standing\nAction: Medication is to be reviewed; subsequent BP should be measured with the person standing and the patient may be referred to specialist care if symptoms persist.\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.47\nEvidence (p.47): \"If the systolic BP falls by ≥ 20 mmHg when the person is standing, medicaƟon is to be reviewed, subsequent BP is to be measured with the person standing and the paƟent may be referred to specialist care if symptoms of postural hypotension persist.\"\nAPPLICABILITY CHECK [HTN-ADV-002]: status=APPLICABLE || criteria not found in patient record (unconfirmed): finding has systolic_drop_>=20mmHg_on_standing\n\n[HTN-IX-002] disease=hypertension category=investigation | Blood pressure re‑measurement schedule based on office BP level\nPrerequisites: not stated\nApplies if ANY: finding has office_bp_<130/85; finding has office_bp_130-159/85-99; finding has office_bp_>160/100\nAction: \n  Variant WHEN finding has office_bp_<130/85: Remeasure within 3 years (1 year in those with other risk factors)\n  Variant WHEN finding has office_bp_130-159/85-99: Confirm with repeated office visits. If possible, confirm with out‑of‑office BP measurement\n  Variant WHEN finding has office_bp_>160/100: Confirm within a few days or weeks\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.47\nEvidence (p.47): \"Remeasure within 3 years (1 year in those with other risk factors)\"\nAPPLICABILITY CHECK [HTN-IX-002]: status=APPLICABLE || criteria not found in patient record (unconfirmed): any of: finding has office_bp_<130/85; finding has office_bp_130-159/85-99; finding has office_bp_>160/100\n\n[CHO-ADV-004] disease=cholera category=advice | Oral Rehydration Solution (ORS) for patients with no sign of dehydration\nPrerequisites: cholera diagnosis; no sign of dehydration\nApplies only if ALL: age_years < 2.0 (<24 months); age_years >= 0.0\nAction: Provide ORS according to age‑specific volume\n  Variant WHEN age_years < 2.0: Give enough ORS packets for each loose stool, 50-100 mL per packet, total 500 mL per day\n  Variant WHEN age_years >= 2.0: Give enough ORS packets for each loose stool, 100-200 mL per packet, total 1 L per day\n  Variant WHEN age_years >= 10.0: Give enough ORS packets for each loose stool, as much as wanted, total 2 L per day\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.11\nEvidence (p.11): \"| < 24 months | 50 - 100 mL | 500 mL / day |\"\nEvidence (p.11): \"| 2-9 years | 100 – 200 mL | 1L/day |\"\nEvidence (p.11): \"| 10 years + | As much as wanted | 2 L / day |\"\nAPPLICABILITY CHECK [CHO-ADV-004]: status=NOT_MET || reasons: requirement not met: age_years < 2.0 (<24 months) || selected variant(s): #1 WHEN age_years >= 2.0 -> Give enough ORS packets for each loose stool, 100-200 mL per packet, total 1 L per day | #2 WHEN age_years >= 10.0 -> Give enough ORS packets for each loose stool, as much as wanted, total 2 L per day\n\n[HTN-IX-101] disease=hypertension category=investigation | Assess major cardiovascular risk factors for hypertension\nPrerequisites: not stated\nAction: Measure systolic and diastolic blood pressure, assess tobacco use, obtain lipid profile (total cholesterol, LDL, HDL), screen for diabetes mellitus, record age, obtain family history of premature cardiovascular disease, and measure waist circumference\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.50\nEvidence (p.50): \"Table 4: Major risk factors for cardiovascular diseases    Levels of SBP and DBP   Tobacco use    Dyslipidemia  o  Total cholesterol >5.1 mmol/L  o  LDL >3 mmol/l, OR  o  HDL <1 (men) and <1.2 mmol/l (women)    Diabetes mellitus   Age (>55 years for men, >65 years for women)    Family history of premature cardiovascular diseases  o  (men <55 years or women <65 years)    Central obesity  o  (Waist circumference >90 cm for men, >80 cm for women)\"\nAPPLICABILITY CHECK [HTN-IX-101]: status=APPLICABLE\n\n[DEN-ADV-006] disease=dengue category=advice | Admission for high‑risk patients\nPrerequisites: not stated\nApplies only if ALL: pregnant == True; age_years < 1.0; age_years > 65.0; obesity == True; medicine has anticoagulants; history has diabetes mellitus; history has hypertension; history has chronic renal failure; history has established liver disease; history has ischemic heart disease; history has solid organ/bone marrow transplant; history has active malignancies; history has peptic ulcer disease; medicine has steroid; medicine has NSAID\nAction: Consider hospital admission even without other severity criteria.\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.46\nEvidence (p.46): \"Patients at high risk for more severe disease and its complications may need admission even without the above criteria.\"\nEvidence (p.46): \"  Pregnant women\"\nEvidence (p.46): \"  Elderly\"\nEvidence (p.46): \"  Obesity\"\nEvidence (p.46): \"  Patients on anticoagulants\"\nEvidence (p.46): \"  Age <1 year or >65 years\"\nAPPLICABILITY CHECK [DEN-ADV-006]: status=NOT_MET || reasons: requirement not met: pregnant == True; requirement not met: age_years < 1.0; requirement not met: age_years > 65.0 || missing patient details: obesity (needed for: obesity == True) || criteria not found in patient record (unconfirmed): medicine has anticoagulants; history has diabetes mellitus; history has hypertension; history has chronic renal failure; history has established liver disease; history has ischemic heart disease; history has solid organ/bone marrow transplant; history has active malignancies; history has peptic ulcer disease; medicine has steroid; medicine has NSAID\n\n[HTN-DX-001] disease=hypertension category=probable_diagnosis | Hypertension diagnosis on single visit (severe BP)\nPrerequisites: not stated\nApplies only if ALL: symptom has sbp>=160 (systolic blood pressure); symptom has dbp>=100 (diastolic blood pressure)\nAction: Diagnose hypertension without further repeat measurements\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.46\nEvidence (p.46): \"The diagnosis might be made on a single visit, if BP is ≥160/100 mmHg or there is accompanying evidence of hypertension mediated organ damage (HMOD)\"\nAPPLICABILITY CHECK [HTN-DX-001]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has sbp>=160 (systolic blood pressure); symptom has dbp>=100 (diastolic blood pressure)\n\n[CHO-RX-014] disease=cholera category=medication | Cholera rehydration – Plan C (children >1 yr and adults)\nPrerequisites: cholera suspected\nApplies only if ALL: age_years >= 1.0\nAction: Administer Ringers lactate 100 mL/kg total volume over 3 hours (initial 30‑minute bolus then remainder over 2½ hours)\nMedication: Ringers lactate | dose: 100 mL/kg | route: IV | freq: single course | duration: 3 hours | instructions: Give 30 min bolus (≈8 mL/min for 10‑13 kg, ≈10 mL/min for 13‑15 kg, etc.) then the remaining volume over 2½ hours | restrictions: not stated\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.12\nEvidence (p.12): \"Children >1 year old, and adults (plan C is 100mL/kg in 3 hours)\"\nAPPLICABILITY CHECK [CHO-RX-014]: status=APPLICABLE\n\n[HTN-IX-014] disease=hypertension category=investigation | Follow‑up blood pressure measurement schedule after initial reading\nPrerequisites: not stated\nAction: \n  Variant WHEN finding has initial_bp_<130_and_<85: Remeasure within 3 years (1 year if other risk factors)\n  Variant WHEN finding has initial_bp_130-159_or_85-99: Confirm with repeated office BP measures within 1‑4 weeks\n  Variant WHEN finding has initial_bp_≥160_or_≥100: Evaluate and initiate treatment immediately\nSource: National Guideline on Hypertension (Second edition 2023), PDF p.65\nEvidence (p.65): \"<130 and <85  Remeasure within 3 years (1 year in those with other risk factors)\"\nAPPLICABILITY CHECK [HTN-IX-014]: status=APPLICABLE\n\n[CHO-DX-005] disease=cholera category=probable_diagnosis | No dehydration\nPrerequisites: awake and alert; normal pulse; normal thirst; eyes not sunken; skin pinch normal\nApplies only if ALL: symptom has awake and alert; symptom has normal pulse; symptom has normal thirst; symptom has eyes not sunken; symptom has skin pinch normal\nAction: Do not admit; follow Plan A\nSource: Clinical tools for cholera treatment facilities (v1.0, 2024), PDF p.6\nEvidence (p.6): \"No  • Awake and alert • Normal pulse • Normal thirst • Eyes not sunken • Skin pinch normal\"\nAPPLICABILITY CHECK [CHO-DX-005]: status=APPLICABLE || criteria not found in patient record (unconfirmed): symptom has awake and alert; symptom has normal pulse; symptom has normal thirst; symptom has eyes not sunken; symptom has skin pinch normal\n\nProduce the recommendation.",
+  "prompt_chars": 13855,
+  "checker_ms": 1.03,
+  "recommendation": {
+    "differential": [
+      {
+        "disease": "hypertension",
+        "likelihood": "most_likely",
+        "status": "probable",
+        "reason": "BP readings 156/98 mmHg on two separate visits in the moderate range (130-159/85-99) and age >55 with diabetes",
+        "supporting_findings": [
+          "BP 156/98 mmHg on two visits",
+          "Age 58 years",
+          "Type 2 diabetes"
+        ],
+        "card_ids": [
+          "HTN-DX-002",
+          "HTN-IX-103"
+        ]
+      }
+    ],
+    "investigations": [
+      {
+        "test": "Repeat office blood pressure measurements",
+        "purpose": "Confirm hypertension diagnosis",
+        "timing_or_condition": "Within 1‑4 weeks on three separate occasions",
+        "card_ids": [
+          "HTN-IX-103"
+        ]
+      },
+      {
+        "test": "Major cardiovascular risk factor assessment (tobacco use, lipid profile, waist circumference, family history)",
+        "purpose": "Assess overall cardiovascular risk in hypertension",
+        "timing_or_condition": "At initial assessment",
+        "card_ids": [
+          "HTN-IX-101"
+        ]
+      }
+    ],
+    "medications": [],
+    "advice": [
+      {
+        "type": "follow_up",
+        "text": "If hypertension is not confirmed, measure clinic blood pressure at least every 3 years and more frequently because the current readings are close to the diagnostic threshold.",
+        "card_ids": [
+          "HTN-ADV-001"
+        ]
+      },
+      {
+        "type": "warning_signs",
+        "text": "Seek urgent medical attention if you develop severe headache, chest pain, shortness of breath, visual changes, or sudden weakness.",
+        "card_ids": []
+      }
+    ],
+    "missing_information": []
+  },
+  "invalid_citations": [],
+  "blocked_citations": [],
+  "elapsed_s": 17.27,
+  "case_id": "C2"
+}

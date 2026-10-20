@@ -1,0 +1,430 @@
+{
+  "timestamp": "2026-10-20T16:43:16",
+  "mode": "baseline",
+  "model": "groq:openai/gpt-oss-120b",
+  "patient": {
+    "complaints": "fever, rash and feeling unwell",
+    "duration_days": 2.0,
+    "age_years": null,
+    "sex": null,
+    "pregnant": null,
+    "weight_kg": null,
+    "history": "",
+    "medicines": "",
+    "allergies": "",
+    "findings": ""
+  },
+  "patient_query": "fever, rash and feeling unwell. for 2 days",
+  "retrieved": [
+    {
+      "card_id": "DEN-DX-005",
+      "disease": "dengue",
+      "category": "probable_diagnosis",
+      "title": "Dengue Without Warning Signs Criteria",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          45
+        ]
+      },
+      "action": "Classify as dengue without warning signs",
+      "evidence": [
+        {
+          "page": 45,
+          "passage": "Dengue without warning signs: Fever (2-7 days) with two or more of the followings; nausea, vomiting, rash, aches and pains, positive tourniquet tests, or leucopenia (WBC <5000/mm3)"
+        }
+      ],
+      "rrf": 0.03279,
+      "dense_rank": 1,
+      "bm25_rank": 1
+    },
+    {
+      "card_id": "CHI-DX-003",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Transient maculopapular rash",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          13
+        ]
+      },
+      "action": "Consider chikungunya fever as a likely diagnosis when a transient maculopapular rash appears and disappears within 48 hours.",
+      "evidence": [
+        {
+          "page": 13,
+          "passage": "Transient maculopapular rash is commonly seen, usually disappear within 48 hours."
+        }
+      ],
+      "rrf": 0.032,
+      "dense_rank": 2,
+      "bm25_rank": 3
+    },
+    {
+      "card_id": "DEN-DX-003",
+      "disease": "dengue",
+      "category": "probable_diagnosis",
+      "title": "Dengue rash patterns",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          28
+        ]
+      },
+      "action": "Recognize rash as a possible manifestation of acute dengue infection",
+      "evidence": [
+        {
+          "page": 28,
+          "passage": "Undifferentiated macular or maculopapular rash may occur over the face, thorax, abdomen, and extremities during the acute phase of dengue. The rash is typically macular or maculopapular and may be associated with pruritus."
+        },
+        {
+          "page": 28,
+          "passage": "Convalescent rash is characterized by confluent erythematous eruption with sparing areas of normal skin. It is often pruritic. The rash typically occurs within one to two days of defervescence and lasts one to five days."
+        }
+      ],
+      "rrf": 0.03128,
+      "dense_rank": 6,
+      "bm25_rank": 2
+    },
+    {
+      "card_id": "CHI-DX-002",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Chikungunya fever clinical diagnosis",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          12
+        ]
+      },
+      "action": "Diagnose chikungunya fever when the typical combination of fever lasting 24‑48 hours with abrupt onset (up to 39‑40 °C) and the joint manifestations described (symmetric arthralgia/arthritis affecting ankles, wrists, small hand joints, possibly migratory polyarthritis) are present, especially if accompanied by any of the listed infrequent or rare features.",
+      "evidence": [
+        {
+          "page": 12,
+          "passage": "The fever varies from low grade to high grade, lasting usually for 24 to 48 hours. Fever rises abruptly in some, reaching 39-400C, with chills and rigor, no diurnal variation, usually subsides with use of antipyretics."
+        },
+        {
+          "page": 12,
+          "passage": "The joint symptoms usually start with arthralgia or arthritis. Involvement is symmetric and often ankles wrists and small joints of the hand are the worst affected. Migratory polyarthritis with effusions may be seen, but resolves in the majority."
+        },
+        {
+          "page": 12,
+          "passage": "Table 1: Clinical features of Chikungunya fever ... Common: Fever, Arthritis/Arthralgia, Backache, Headache, Rash ... Infrequent: Stomatitis, Oral ulcers, Exfoliative dermatitis, Photosensitive, hyperpigmentation ... Rare in adults but seen in children: Photophobia, Retro-orbital pain, Vomiting, Diarrhoea, Mental confusion, Signs of meningeal irritation"
+        }
+      ],
+      "rrf": 0.03055,
+      "dense_rank": 4,
+      "bm25_rank": 7
+    },
+    {
+      "card_id": "CHI-DX-009",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Chikungunya fever",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          17
+        ]
+      },
+      "action": "Consider chikungunya as the likely diagnosis when fever >38.5°C and prominent arthralgia are present, especially if the pattern of other features (arthritis, headache, rash, myalgia, lymphopenia) matches the typical chikungunya profile.",
+      "evidence": [
+        {
+          "page": 17,
+          "passage": "Fever (>38.5°C)    +++            ++\nArthralgia        +++                  +/-\nArthritis         +                        -\nHeadache        ++             ++\nRash            ++             +\nMyalgia          +              ++\nLymphopenia      +++            ++"
+        }
+      ],
+      "rrf": 0.03055,
+      "dense_rank": 7,
+      "bm25_rank": 4
+    },
+    {
+      "card_id": "CHI-DX-004",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Chikungunya Fever - Mild Presentation",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          14
+        ]
+      },
+      "action": "Classify as mild chikungunya fever and provide supportive care",
+      "evidence": [
+        {
+          "page": 14,
+          "passage": "Mild\n Low grade fever\n  Mild artharlgia\n  Mild focal myalgia\n  General weakness\n  Skin rash/itching"
+        }
+      ],
+      "rrf": 0.02947,
+      "dense_rank": 11,
+      "bm25_rank": 5
+    },
+    {
+      "card_id": "DEN-DX-002",
+      "disease": "dengue",
+      "category": "probable_diagnosis",
+      "title": "Classical Dengue Fever (DF)",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          27
+        ]
+      },
+      "action": "Consider diagnosis of classical dengue fever and monitor for complications such as hemorrhage",
+      "evidence": [
+        {
+          "page": 27,
+          "passage": "A proportion of patients infected with dengue virus develop classical dengue fever characterized by high fever, severe headache, retro-orbital pain, myalgia, arthralgia and rashes. Leucopenia and thrombocytopenia are usually observed."
+        },
+        {
+          "page": 27,
+          "passage": "The body temperature is usually between 39 °C and 40 °C (102° F to 104° F)."
+        }
+      ],
+      "rrf": 0.02944,
+      "dense_rank": 10,
+      "bm25_rank": 6
+    },
+    {
+      "card_id": "CHI-ADV-004",
+      "disease": "chikungunya",
+      "category": "advice",
+      "title": "Consider differential diagnoses for febrile arthralgia",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          16
+        ]
+      },
+      "action": "Evaluate for alternative diagnoses based on specific clinical features such as severe backpain with purpura, enthesitis, rash, or migratory polyarthritis.",
+      "evidence": [
+        {
+          "page": 16,
+          "passage": "Some of the diseases which can be considered in differential diagnosis are:"
+        },
+        {
+          "page": 16,
+          "passage": "(1) Dengue fever: Severe backpain with purpuras or active bleeding might suggest dengue fever. Confirmatory laboratory diagnosis is possible."
+        },
+        {
+          "page": 16,
+          "passage": "(2) Reactive Arthritis: In general, any arthritis that follows a febrile gastrointestinal or genitourinary infection ... is considered a reactive acute inflammatory arthritis if it lasts less than six months. The hallmark feature is enthesitis ... Oral mucosal ulcers are seen."
+        },
+        {
+          "page": 16,
+          "passage": "(3) Serum sickness illness: Polyarthritis may be associated with a serum sickness type reaction caused by vaccine, medication or other viral infections"
+        },
+        {
+          "page": 16,
+          "passage": "(4) Rickettsial disease can present with fever, rash and joint pains. Confirm by serology."
+        },
+        {
+          "page": 16,
+          "passage": "(5) Rheumatic fever: More common in the children and presents with fleeting (migratory) polyarthritis predominantly affecting the large joints. Modified Jones criteria should be the basis for diagnosis. Raised ASO titre and a history of recurrent sore throat are other points to be noted."
+        }
+      ],
+      "rrf": 0.02941,
+      "dense_rank": 8,
+      "bm25_rank": 8
+    },
+    {
+      "card_id": "CHI-DX-001",
+      "disease": "chikungunya",
+      "category": "probable_diagnosis",
+      "title": "Probable Chikungunya case",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          11
+        ]
+      },
+      "action": "Classify as probable case and consider confirmatory testing",
+      "evidence": [
+        {
+          "page": 11,
+          "passage": "Probable case: a patient meeting both the clinical and epidemiological criteria"
+        }
+      ],
+      "rrf": 0.02908,
+      "dense_rank": 5,
+      "bm25_rank": 13
+    },
+    {
+      "card_id": "DEN-DX-001",
+      "disease": "dengue",
+      "category": "probable_diagnosis",
+      "title": "Dengue infection (symptomatic)",
+      "source": {
+        "title": "NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE",
+        "version": "5th edition, 2025",
+        "pdf_pages": [
+          26
+        ]
+      },
+      "action": "Consider dengue as a probable diagnosis in patients presenting with the listed clinical conditions after the specified incubation period.",
+      "evidence": [
+        {
+          "page": 26,
+          "passage": "Symptoms develop after an incubation period of 4-7 days (range 3-14 days) and symptomatic patients may have one of the following conditions:\n      •   Undifferentiated fever\n      •  DF\n      •  DHF\n      •  Expanded dengue syndrome (rare)"
+        }
+      ],
+      "rrf": 0.0276,
+      "dense_rank": 14,
+      "bm25_rank": 11
+    },
+    {
+      "card_id": "CHI-ADV-013",
+      "disease": "chikungunya",
+      "category": "advice",
+      "title": "Avoid aspirin and NSAIDs in acute phase",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          20
+        ]
+      },
+      "action": "Avoid aspirin or NSAIDs during first 10 days; NSAIDs may be used only after dengue fever is adequately excluded",
+      "evidence": [
+        {
+          "page": 20,
+          "passage": "Aspirin or NSAIDs should be avoided during first 10 days. NSAIDs can be used in Chikungunya only when Dengue fever is adequately excluded."
+        }
+      ],
+      "rrf": 0.02654,
+      "dense_rank": 23,
+      "bm25_rank": 9
+    },
+    {
+      "card_id": "CHI-ADV-003",
+      "disease": "chikungunya",
+      "category": "advice",
+      "title": "Expected Clinical Course of Chikungunya",
+      "source": {
+        "title": "NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER",
+        "version": "First published 15 May 2017",
+        "pdf_pages": [
+          15
+        ]
+      },
+      "action": "Inform patient that acute symptoms usually resolve within 7–10 days; advise that rheumatologic relapses may occur months later and to seek follow‑up if they develop polyarthralgia, polyarthritis or tenosynovitis",
+      "evidence": [
+        {
+          "page": 15,
+          "passage": "Clinical course and outcome\n  Acute symptoms typically resolve within 7–10 days\n Some patients might have relapse of rheumatologic symptoms (e.g., polyarthralgia, polyarthritis, tenosynovitis) in months following acute illness"
+        }
+      ],
+      "rrf": 0.0264,
+      "dense_rank": 9,
+      "bm25_rank": 24
+    }
+  ],
+  "applicability": null,
+  "prompt": "## PATIENT\nChief complaints: fever, rash and feeling unwell\nIllness duration (days): 2.0\nAge (years): not stated\nSex: not stated\nPregnant: not stated\nWeight (kg): not stated\nMedical history: not stated\nCurrent medicines: not stated\nAllergies: not stated\nFindings/results available: not stated\n\n## PROTOCOL CARDS\n[DEN-DX-005] disease=dengue category=probable_diagnosis | Dengue Without Warning Signs Criteria\nPrerequisites: fever 2-7 days; two or more of: nausea, vomiting, rash, aches and pains, positive tourniquet test, leucopenia\nApplies only if ALL: duration_days >= 2.0; duration_days <= 7.0\nApplies if ANY: symptom has nausea; symptom has vomiting; symptom has rash; symptom has aches and pains; finding has positive tourniquet test; finding has leucopenia (WBC <5000/mm3)\nAction: Classify as dengue without warning signs\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.45\nEvidence (p.45): \"Dengue without warning signs: Fever (2-7 days) with two or more of the followings; nausea, vomiting, rash, aches and pains, positive tourniquet tests, or leucopenia (WBC <5000/mm3)\"\n\n[CHI-DX-003] disease=chikungunya category=probable_diagnosis | Transient maculopapular rash\nPrerequisites: maculopapular rash lasting ≤48 hours\nAction: Consider chikungunya fever as a likely diagnosis when a transient maculopapular rash appears and disappears within 48 hours.\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.13\nEvidence (p.13): \"Transient maculopapular rash is commonly seen, usually disappear within 48 hours.\"\n\n[DEN-DX-003] disease=dengue category=probable_diagnosis | Dengue rash patterns\nPrerequisites: macular or maculopapular rash; pruritus\nApplies only if ALL: symptom has macular or maculopapular rash; symptom has pruritus (may be associated)\nAction: Recognize rash as a possible manifestation of acute dengue infection\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.28\nEvidence (p.28): \"Undifferentiated macular or maculopapular rash may occur over the face, thorax, abdomen, and extremities during the acute phase of dengue. The rash is typically macular or maculopapular and may be associated with pruritus.\"\nEvidence (p.28): \"Convalescent rash is characterized by confluent erythematous eruption with sparing areas of normal skin. It is often pruritic. The rash typically occurs within one to two days of defervescence and lasts one to five days.\"\n\n[CHI-DX-002] disease=chikungunya category=probable_diagnosis | Chikungunya fever clinical diagnosis\nPrerequisites: fever; arthralgia or arthritis; backache; headache; rash; stomatitis; oral ulcers; photophobia; retro-orbital pain; vomiting; diarrhoea; mental confusion; photosensitive rash; hyperpigmentation; signs of meningeal irritation\nAction: Diagnose chikungunya fever when the typical combination of fever lasting 24‑48 hours with abrupt onset (up to 39‑40 °C) and the joint manifestations described (symmetric arthralgia/arthritis affecting ankles, wrists, small hand joints, possibly migratory polyarthritis) are present, especially if accompanied by any of the listed infrequent or rare features.\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.12\nEvidence (p.12): \"The fever varies from low grade to high grade, lasting usually for 24 to 48 hours. Fever rises abruptly in some, reaching 39-400C, with chills and rigor, no diurnal variation, usually subsides with use of antipyretics.\"\nEvidence (p.12): \"The joint symptoms usually start with arthralgia or arthritis. Involvement is symmetric and often ankles wrists and small joints of the hand are the worst affected. Migratory polyarthritis with effusions may be seen, but resolves in the majority.\"\nEvidence (p.12): \"Table 1: Clinical features of Chikungunya fever ... Common: Fever, Arthritis/Arthralgia, Backache, Headache, Rash ... Infrequent: Stomatitis, Oral ulcers, Exfoliative dermatitis, Photosensitive, hyperpigmentation ... Rare in adults but seen in children: Photophobia, Retro-orbital pain, Vomiting, Diarrhoea, Mental confusion, Signs of meningeal irritation\"\n\n[CHI-DX-009] disease=chikungunya category=probable_diagnosis | Chikungunya fever\nPrerequisites: fever >38.5°C; arthralgia; arthritis; headache; rash; myalgia; lymphopenia\nApplies only if ALL: symptom has fever >38.5°C; symptom has arthralgia\nApplies if ANY: symptom has arthritis; symptom has headache; symptom has rash; symptom has myalgia; symptom has lymphopenia\nAction: Consider chikungunya as the likely diagnosis when fever >38.5°C and prominent arthralgia are present, especially if the pattern of other features (arthritis, headache, rash, myalgia, lymphopenia) matches the typical chikungunya profile.\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.17\nEvidence (p.17): \"Fever (>38.5°C)    +++            ++\nArthralgia        +++                  +/-\nArthritis         +                        -\nHeadache        ++             ++\nRash            ++             +\nMyalgia          +              ++\nLymphopenia      +++            ++\"\n\n[CHI-DX-004] disease=chikungunya category=probable_diagnosis | Chikungunya Fever - Mild Presentation\nPrerequisites: low grade fever; mild arthralgia; mild focal myalgia; general weakness; skin rash/itching\nApplies only if ALL: symptom has low grade fever; symptom has mild arthralgia\nAction: Classify as mild chikungunya fever and provide supportive care\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.14\nEvidence (p.14): \"Mild\n Low grade fever\n  Mild artharlgia\n  Mild focal myalgia\n  General weakness\n  Skin rash/itching\"\n\n[DEN-DX-002] disease=dengue category=probable_diagnosis | Classical Dengue Fever (DF)\nPrerequisites: high fever; severe headache; retro-orbital pain; myalgia; arthralgia; rash; leucopenia; thrombocytopenia\nApplies only if ALL: symptom has high fever; symptom has severe headache; symptom has retro-orbital pain; symptom has myalgia; symptom has arthralgia; symptom has rash\nAction: Consider diagnosis of classical dengue fever and monitor for complications such as hemorrhage\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.27\nEvidence (p.27): \"A proportion of patients infected with dengue virus develop classical dengue fever characterized by high fever, severe headache, retro-orbital pain, myalgia, arthralgia and rashes. Leucopenia and thrombocytopenia are usually observed.\"\nEvidence (p.27): \"The body temperature is usually between 39 °C and 40 °C (102° F to 104° F).\"\n\n[CHI-ADV-004] disease=chikungunya category=advice | Consider differential diagnoses for febrile arthralgia\nPrerequisites: fever; joint pain\nApplies only if ALL: symptom has fever; symptom has joint pain\nAction: Evaluate for alternative diagnoses based on specific clinical features such as severe backpain with purpura, enthesitis, rash, or migratory polyarthritis.\n  Variant WHEN symptom has severe backpain AND symptom has purpura or active bleeding: Consider dengue fever; confirmatory laboratory diagnosis is possible.\n  Variant WHEN symptom has enthesitis: Consider reactive arthritis; hallmark feature is enthesitis and oral mucosal ulcers may be seen.\n  Variant WHEN symptom has polyarthritis after vaccine or medication: Consider serum sickness illness; may be associated with polyarthritis.\n  Variant WHEN symptom has rash: Consider rickettsial disease; confirm by serology.\n  Variant WHEN symptom has migratory polyarthritis in children: Consider rheumatic fever; use Modified Jones criteria and check ASO titre and sore throat history.\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.16\nEvidence (p.16): \"Some of the diseases which can be considered in differential diagnosis are:\"\nEvidence (p.16): \"(1) Dengue fever: Severe backpain with purpuras or active bleeding might suggest dengue fever. Confirmatory laboratory diagnosis is possible.\"\nEvidence (p.16): \"(2) Reactive Arthritis: In general, any arthritis that follows a febrile gastrointestinal or genitourinary infection ... is considered a reactive acute inflammatory arthritis if it lasts less than six months. The hallmark feature is enthesitis ... Oral mucosal ulcers are seen.\"\nEvidence (p.16): \"(3) Serum sickness illness: Polyarthritis may be associated with a serum sickness type reaction caused by vaccine, medication or other viral infections\"\nEvidence (p.16): \"(4) Rickettsial disease can present with fever, rash and joint pains. Confirm by serology.\"\nEvidence (p.16): \"(5) Rheumatic fever: More common in the children and presents with fleeting (migratory) polyarthritis predominantly affecting the large joints. Modified Jones criteria should be the basis for diagnosis. Raised ASO titre and a history of recurrent sore throat are other points to be noted.\"\n\n[CHI-DX-001] disease=chikungunya category=probable_diagnosis | Probable Chikungunya case\nPrerequisites: acute onset fever >38.5°C; severe arthralgia/arthritis not explained by other medical conditions; residing or having visited epidemic areas; reported transmission within 15 days prior to onset\nApplies only if ALL: symptom has fever >38.5°C; symptom has severe arthralgia/arthritis; history has residing or visited epidemic area; history has transmission within 15 days prior to onset\nAction: Classify as probable case and consider confirmatory testing\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.11\nEvidence (p.11): \"Probable case: a patient meeting both the clinical and epidemiological criteria\"\n\n[DEN-DX-001] disease=dengue category=probable_diagnosis | Dengue infection (symptomatic)\nPrerequisites: Incubation period of 4-7 days (range 3-14 days); Undifferentiated fever; Dengue fever (DF); Dengue haemorrhagic fever (DHF); Expanded dengue syndrome (rare)\nAction: Consider dengue as a probable diagnosis in patients presenting with the listed clinical conditions after the specified incubation period.\nSource: NATIONAL GUIDELINE FOR CLINICAL MANAGEMENT OF DENGUE (5th edition, 2025), PDF p.26\nEvidence (p.26): \"Symptoms develop after an incubation period of 4-7 days (range 3-14 days) and symptomatic patients may have one of the following conditions:\n      •   Undifferentiated fever\n      •  DF\n      •  DHF\n      •  Expanded dengue syndrome (rare)\"\n\n[CHI-ADV-013] disease=chikungunya category=advice | Avoid aspirin and NSAIDs in acute phase\nPrerequisites: not stated\nApplies only if ALL: duration_days >= 0.0; duration_days < 10.0 (first 10 days)\nAction: Avoid aspirin or NSAIDs during first 10 days; NSAIDs may be used only after dengue fever is adequately excluded\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.20\nEvidence (p.20): \"Aspirin or NSAIDs should be avoided during first 10 days. NSAIDs can be used in Chikungunya only when Dengue fever is adequately excluded.\"\n\n[CHI-ADV-003] disease=chikungunya category=advice | Expected Clinical Course of Chikungunya\nPrerequisites: not stated\nAction: Inform patient that acute symptoms usually resolve within 7–10 days; advise that rheumatologic relapses may occur months later and to seek follow‑up if they develop polyarthralgia, polyarthritis or tenosynovitis\nSource: NATIONAL GUIDELINE ON CLINICAL MANAGEMENT OF CHIKUNGUNYA FEVER (First published 15 May 2017), PDF p.15\nEvidence (p.15): \"Clinical course and outcome\n  Acute symptoms typically resolve within 7–10 days\n Some patients might have relapse of rheumatologic symptoms (e.g., polyarthralgia, polyarthritis, tenosynovitis) in months following acute illness\"\n\nProduce the recommendation.",
+  "prompt_chars": 12945,
+  "checker_ms": 0.0,
+  "recommendation": {
+    "differential": [
+      {
+        "disease": "dengue",
+        "likelihood": "possible",
+        "status": "probable",
+        "reason": "Fever of 2 days and rash are present; need at least two additional criteria (nausea, vomiting, aches/pains, positive tourniquet test, or leucopenia) to meet dengue without warning signs criteria.",
+        "supporting_findings": [
+          "fever",
+          "rash"
+        ],
+        "card_ids": [
+          "DEN-DX-005"
+        ]
+      },
+      {
+        "disease": "chikungunya",
+        "likelihood": "possible",
+        "status": "probable",
+        "reason": "Fever and rash are present; chikungunya diagnosis requires fever >38.5°C and arthralgia, which are not documented.",
+        "supporting_findings": [
+          "fever",
+          "rash"
+        ],
+        "card_ids": [
+          "CHI-DX-009"
+        ]
+      }
+    ],
+    "investigations": [],
+    "medications": [],
+    "advice": [
+      {
+        "type": "warning_signs",
+        "text": "Avoid aspirin and NSAIDs during the first 10 days of illness until dengue is excluded.",
+        "card_ids": [
+          "CHI-ADV-013"
+        ]
+      },
+      {
+        "type": "self_care",
+        "text": "Inform the patient that acute symptoms of chikungunya usually resolve within 7–10 days, but rheumatologic relapses may occur months later; seek follow‑up if polyarthralgia, polyarthritis or tenosynovitis develop.",
+        "card_ids": [
+          "CHI-ADV-003"
+        ]
+      }
+    ],
+    "missing_information": [
+      {
+        "field": "temperature (°C)",
+        "why_needed": "Needed to determine if fever >38.5°C for chikungunya criteria and high fever for dengue criteria.",
+        "card_ids": [
+          "CHI-DX-009",
+          "DEN-DX-002"
+        ]
+      },
+      {
+        "field": "presence of arthralgia or arthritis",
+        "why_needed": "Required for chikungunya diagnostic criteria.",
+        "card_ids": [
+          "CHI-DX-009",
+          "CHI-DX-004",
+          "CHI-DX-002"
+        ]
+      },
+      {
+        "field": "additional symptoms: nausea, vomiting, aches/pains, positive tourniquet test, leucopenia",
+        "why_needed": "Needed to meet the two‑or‑more symptom requirement for dengue without warning signs.",
+        "card_ids": [
+          "DEN-DX-005"
+        ]
+      },
+      {
+        "field": "rash characteristics and duration",
+        "why_needed": "To assess if rash is maculopapular and transient (≤48 h) for chikungunya rash criteria.",
+        "card_ids": [
+          "CHI-DX-003",
+          "DEN-DX-003"
+        ]
+      },
+      {
+        "field": "complete blood count (WBC, platelet count)",
+        "why_needed": "Leucopenia and thrombocytopenia help confirm dengue infection.",
+        "card_ids": [
+          "DEN-DX-005",
+          "DEN-DX-002"
+        ]
+      }
+    ]
+  },
+  "invalid_citations": [],
+  "blocked_citations": [],
+  "elapsed_s": 18.35,
+  "case_id": "C5"
+}
