@@ -1,0 +1,13 @@
+﻿case_id,mode,key_behaviour,supported_by_citation,restrictions_preserved,missing_info_handled,reason,source_page,auto_key_hint,auto_avoid_hint,invalid_citations,blocked_citations,elapsed_s,prompt_chars,failure_note
+C1,baseline,pass,pass,pass,pass,Dengue home care; paracetamol <=3g/day; oral fluids; warning signs,Dengue p.45-48,auto-fail: missing ['CBC'],ok,,,22.85,12040,
+C1,improved,pass,pass,pass,pass,Dengue home care; paracetamol <=3g/day; oral fluids; warning signs,Dengue p.45-48,"auto-fail: missing ['CBC', 'NS1']",ok,,,17.64,14732,
+C2,baseline,pass,pass,pass,pass,Deferred immediate drug therapy; advised repeat BP and CV risk profile,HTN p.46-47; p.65,auto-fail: missing ['ECG|creatinine'],ok,,,17.06,10785,
+C2,improved,pass,pass,pass,pass,Deferred immediate drug therapy; advised repeat BP and CV risk profile,HTN p.46-47; p.65,auto-fail: missing ['ECG|creatinine'],ok,,,17.27,13855,
+C3,baseline,fail,pass,fail,pass,Gave Plan C IV Ringers lactate instead of Plan B ORS for some dehydration,Cholera p.6; p.9,"auto-fail: missing ['ORS|oral rehydration', '2200']",CHECK ['ringer'],,,16.94,10559,Overtreated: IV Ringers recommended for non-severe dehydration
+C3,improved,fail,pass,fail,pass,Gave Plan C IV Ringers lactate instead of Plan B ORS for some dehydration,Cholera p.6; p.9,"auto-fail: missing ['ORS|oral rehydration', '2200']",CHECK ['ringer'],,,33.01,13148,Overtreated: IV Ringers recommended for non-severe dehydration
+C4,baseline,pass,pass,pass,pass,Probable chikungunya + dengue differential; avoided NSAIDs in acute stage,Chikungunya p.11; p.18-20,auto-fail: missing ['paracetamol'],ok,,,17.82,13839,
+C4,improved,pass,pass,pass,pass,Probable chikungunya + dengue differential; avoided NSAIDs in acute stage,Chikungunya p.11; p.18-20,auto-fail: missing ['paracetamol'],ok,,,33.11,15924,
+C5,baseline,pass,pass,pass,pass,Maintained differential; explicit warning to avoid NSAIDs; captured missing vitals,Dengue p.37; Chik p.11; p.18,auto-fail: missing ['CBC|NS1'],CHECK ['ibuprofen|diclofenac|naproxen|aspirin'],,,18.35,12945,
+C5,improved,pass,pass,pass,pass,Maintained differential; explicit warning to avoid NSAIDs; captured missing vitals,Dengue p.37; Chik p.11; p.18,auto-fail: missing ['CBC|NS1'],CHECK ['ibuprofen|diclofenac|naproxen|aspirin'],,,33.48,15212,
+C6,baseline,pass,pass,pass,pass,Changed C1 home care to urgent inpatient referral on warning signs,Dengue p.28; p.47,auto-pass,ok,,,17.38,12303,
+C6,improved,pass,pass,pass,pass,Changed C1 home care to urgent inpatient referral on warning signs,Dengue p.28; p.47,auto-pass,ok,,,18.28,14530,

@@ -5,6 +5,7 @@ from dataclasses import dataclass, field, asdict
 from .schema import Card, Condition, Patient
 
 T, F, N, U = "true", "false", "notfound", "unknown"
+
 LABEL = {
     "symptom": "symptoms",
     "finding": "findings/results",
