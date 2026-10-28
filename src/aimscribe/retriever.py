@@ -30,9 +30,17 @@ class HybridRetriever:
         self.cards = load_cards()
         self.by_id = {c.card_id: c for c in self.cards}
         self.model = SentenceTransformer(EMBED_MODEL)
-        self.col = chromadb.PersistentClient(path=str(INDEX_DIR)).get_collection(
-            COLLECTION
-        )
+        # self.col = chromadb.PersistentClient(path=str(INDEX_DIR)).get_collection(
+        #     COLLECTION
+        # )
+        client = chromadb.PersistentClient(path=str(INDEX_DIR))
+        try:
+            self.col = client.get_collection(COLLECTION)
+        except Exception:
+            from .indexer import build_index
+            build_index()
+            self.col = client.get_collection(COLLECTION)
+
         self.bm25 = BM25Okapi([_tok(c.index_text()) for c in self.cards])
 
     def retrieve(
